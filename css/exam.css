@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #343a40;
+}
+
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+    color: #495057;
+}
+
+p.question {
+    font-weight: bold;
+}
+
+.correct-answer {
+    color: green;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.options {
+    margin-bottom: 15px;
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+.options label {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e9ecef;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.options input[type="radio"]:checked + label {
+    background-color: #d1ecf1;
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.options label:hover {
+    background-color: #f1f3f5;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.timer {
+    font-size: 18px;
+    color: #ff0000;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
