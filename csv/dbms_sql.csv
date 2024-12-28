@@ -1,0 +1,216 @@
+Which SQL statement is used to extract data from a database?,GET,EXTRACT,FETCH,SELECT,SELECT,memory,easy
+Which SQL keyword is used to sort the result-set?,SORT BY,ORDER BY,ARRANGE BY,ALIGN BY,ORDER BY,understanding,medium
+Which SQL keyword is used to delete data from a database?,REMOVE,DELETE,DESTROY,ERASE,DELETE,memory,easy
+ What SQL clause is used to filter the results of a query?,FILTER BY,FILTER BY,WHERE,LOCATE,WHERE,understanding,easy
+Which SQL function returns the number of rows in a query?,NUM,COUNT,SUM,TOTAL,COUNT,memory,easy
+Which SQL keyword gives a nickname to a table (typically for the purpose of a join)?,NICKNAME, AS,ALIAS,CALL,ALIAS,understanding,hard
+What type of SQL command is INSERT INTO?,Data Definition Language,Data Manipulation Language, Data Control Language,Transaction Control Language,Data Manipulation Language,understanding,medium
+ Which command is used to remove a table from a database?,REMOVE, ERASE,DROP, DELETE,DROP,memory,easy
+"In SQL, which command is used to make changes made by a transaction permanent in a database?",SAVE,SAVEPOINT,COMMIT,HOLD,COMMIT,understanding,hard
+What will the SQL query SELECT * FROM Users WHERE FirstName = ‘John’ AND LastName = ‘Doe’; return?,All users with the first name 'John'.,All users with the last name 'Doe'.,All users with the first name 'John' or the last name 'Doe'.,All users with the first name 'John' and the last name 'Doe'.,All users with the first name 'John' and the last name 'Doe'.,understanding,medium
+What is the default sort order of the ORDER BY clause in SQL?,Descending, Ascending, Random,Hierarchical, Ascending,memory,medium
+Which SQL statement is used to update data in a database?,MODIFY,REVISE,CHANGE,UPDATE,UPDATE,memory,easy
+Which SQL function calculates the total sum of a numeric column?,SUMMARIZE,TOTAL,COUNT,SUM,SUM,memory,easy
+What does the SQL LIKE operator do?, Compares two values for equality,Finds rows that match a specified pattern,Calculates the sum of values,Sorts result in ascending or descending order,Finds rows that match a specified pattern,understanding,hard
+Which SQL clause is used to group rows that have the same values in specified columns?,GROUP BY,ORDER BY,PARTITION BY,SORT BY,GROUP BY,memory,medium
+What does SQL stand for?,Structured Question Language,Simple Query Language,Structured Query Language,System Query Language,Structured Query Language,understanding,medium
+" In SQL, which operator is used to test for a value within a range of values?",IN, BETWEEN,LIKE,CONTAINS, BETWEEN,understanding,easy
+"Which SQL statement is used to add, modify, or drop columns in a table?",MODIFY TABLE,CHANGE TABLE,ALTER TABLE,UPDATE TABLE,ALTER TABLE,memory,easy
+What is the purpose of the SQL DISTINCT keyword?,To sort results,To remove duplicates,To update records,To join tables,To remove duplicates,understanding,hard
+Which SQL command creates a new database?,NEW DATABASE,ADD DATABASE,CREATE DATABASE,INIT DATABASE,CREATE DATABASE,understanding,easy
+Which SQL statement is used to return only different values?,SELECT UNIQUE,SELECT DIFFERENT,SELECT DISTINCT,SELECT SEPARATE,SELECT DISTINCT,memory,hard
+" In SQL, which command is used to roll back a transaction?",REVERT,UNDO, ROLLBACK,RESET, ROLLBACK,memory,medium
+Which SQL function returns the highest value in a column?, MAX,HIGH,UP,TOP, MAX,understanding,easy
+What is the SQL keyword used to retrieve a maximum of 5 records from a table?,TOP 5,FIRST 5,BEST 5,LEADING 5,TOP 5,memory,hard
+What does the SQL NULL value represent?, Zero,Empty string,Undefined or missing data,FALSE,Undefined or missing data,understanding,easy
+Which SQL clause allows filtering AFTER the GROUP BY clause has been applied?,FILTER BY,WHERE,HAVING,AFTER,HAVING,understanding,medium
+ What SQL keyword is used to introduce an alias?, INTRODUCE,AS,ALIAS FOR,NAME,AS,memory,easy
+Which SQL keyword combines the result of two or more SELECT statements?,COMBINE, UNION,JOIN,MERGE, UNION,memory,easy
+What is the main difference between UNION and UNION ALL?,UNION ALL allows duplicate records.,UNION requires the same number of columns in each SELECT statement,UNION ALL can only be used with two SELECT statements.,UNION allows different data types in the SELECT statements.,UNION ALL allows duplicate records.,understanding,hard
+Which SQL statement is used to create a stored procedure in a database?,CREATE STORED PROCEDURE,ADD PROCEDURE, DEFINE PROCEDURE,MAKE PROCEDURE,CREATE STORED PROCEDURE,memory,easy
+"In SQL, how do you select all the records from a table named “Users” where the “FirstName” column is not empty?",SELECT * FROM Users WHERE FirstName = '',SELECT * FROM Users WHERE FirstName != '', SELECT * FROM Users WHERE FirstName IS NOT NULL,SELECT * FROM Users WHERE FirstName EXISTS, SELECT * FROM Users WHERE FirstName IS NOT NULL,understanding,medium
+Which SQL function returns the smallest value of the selected column?,LEAST,MINIMUM, MIN,SMALL, MIN,understanding,easy
+What type of SQL command is GRANT?,Data Definition Language,Data Manipulation Language, Data Control Language,Transaction Control Language, Data Control Language,understanding,medium
+ Which SQL statement is used to delete a table definition and all its data?,DELETE TABLE, DROP TABLE,REMOVE TABLE,TRUNCATE TABLE, DROP TABLE,memory,easy
+What does the TRUNCATE TABLE statement do in SQL?,Deletes only the table data but not its schema, Deletes the table definition,Modifies the table data type,Makes a copy of the table,Deletes only the table data but not its schema,understanding,hard
+Which SQL clause specifies a condition while fetching data from a single table or by joining multiple tables?,AND,ALIAS,WHERE,ON,ON,memory,medium
+Which type of SQL join returns only the rows where there is a match in both the left and the right table?, INNER JOIN, LEFT JOIN, LEFT JOIN,FULL JOIN, INNER JOIN,memory,easy
+" If you use a LEFT JOIN between two tables, which of the following statements is true?",It retrieves only the matched records from both tables., It retrieves all the records from the left table and the matched records from the right table.,It retrieves all the records from the right table and the matched records from the left table., It retrieves all the records from both tables regardless of a match., It retrieves all the records from the left table and the matched records from the right table.,understanding,medium
+What does a FULL JOIN do in SQL?,Returns only the rows where there is a match in one of the tables.,Returns all the rows when there is a match in one of the tables.,Returns only the rows where there is a match in both tables.,Returns all rows from both tables and puts NULL in the columns from the table that doesn’t have a match.,Returns all rows from both tables and puts NULL in the columns from the table that doesn’t have a match.,understanding,easy
+"If you perform a CROSS JOIN between a table with 5 rows and a table with 8 rows, how many rows will the result set contain?",13,40,3,8,40,understanding,hard
+Which SQL command is used to enter data into a database?,INSERT,SELECT,UPDATE,DELETE,INSERT,memory,easy
+Which SQL statement is used to remove a table from the database?,DELETE TABLE,DROP TABLE,REMOVE TABLE, CLEAR TABLE,DROP TABLE,memory,easy
+Which keyword is used to sort the result set in ascending order?,SORT,ORDER,ORDER BY,SORT BY,ORDER BY,memory,easy
+How can you fetch unique values from a column?,UNIQUE,DISTINCT,SINGLE,UNO,DISTINCT,understanding,medium
+"Here which of the following displays the unique values of the column?
+
+   SELECT ________ dept_name 
+   FROM instructor;",All,From,Distinct,Name,Distinct,example,medium
+The ______ clause allows us to select only those rows in the result relation of the ____ clause that satisfy a specified predicate.,"Where, from"," From, select","Select, from","From, where","Where, from",fill ups,medium
+The ________ clause is used to list the attributes desired in the result of a query,Where ,Select ,From ,Distinct,Select ,fill ups,easy
+"This Query can be replaced by which one of the following?
+
+   SELECT name, course_id
+   FROM instructor, teaches
+   WHERE instructor_ID= teaches_ID;","Select name,course_id from teaches,instructor where instructor_id=course_id;","Select name, course_id from instructor natural join teaches;","Select name, course_id from instructor;", Select course_id from instructor join teaches;,"Select name, course_id from instructor natural join teaches;",example,hard
+"SELECT * FROM employee WHERE salary>10000 AND dept_id=101;
+Which of the following fields are displayed as output?","Salary, dept_id", Employee,Salary,All the field of employee relation,All the field of employee relation,example,medium
+"Employee_id	Name	Salary
+1001	              Annie	6000
+1009	              Ross	4500
+1018	              Zeith	7000
+This is Employee table.
+Which of the following employee_id will be displayed for the given query?
+SELECT * FROM employee WHERE employee_id>1009;","1009, 1001, 1018"," 1009, 1018", 1001,1018,1018,example,easy
+Which of the following statements contains an error?,Select * from emp where empid = 10003;,Select empid from emp where empid = 10006;,Select empid from emp;,Select empid where empid = 1009 and lastname = ‘GELLER’;,Select empid where empid = 1009 and lastname = ‘GELLER’;,understanding,hard
+ ’_ _ _ ’ matches any string of ______ three characters. ’_ _ _ %’ matches any string of at ______ three characters.,"Atleast, Exactly","Exactly, Atleast","Atleast, All","All, Exactly","Exactly, Atleast",fill ups,hard
+"Fill in the blank with the most appropriate word or phrase from the options provided.
+
+A database management system (DBMS) is a collection of tools to handle the creation, manipulation, and retrieval of data stored in a(n) __________.", application,spreadsheet,database,document,database,fill ups,medium
+Which SQL statement is used to insert a new record in a table?,INSERT NEW,NSERT INTO,ADD INTO,ADD RECORD,NSERT INTO,memory,easy
+What type of JOIN returns only rows when there is at least one match in both tables?,LEFT JOIN,INNER JOIN,RIGHT JOIN,FULL JOIN,INNER JOIN,understanding,easy
+Which MySQL function can be used to return the length of a string?,LENGTH(),SIZE(),STRLEN(),COUNT(),LENGTH(),understanding,medium
+" In MySQL, which command is used to return the version of the MySQL server?",SELECT VERSION();,GET VERSION();,SELECT MYSQLVERSION();,SELECT SERVER();,SELECT VERSION();,memory,hard
+Which SQL statement is used to update data in a database?,REFRESH,MODIFY,REPLACE,UPDATE,UPDATE,memory,easy
+Which of the following is not a valid SQL data type?,FLOAT,CHAR,SINGLE,DECIMAL,SINGLE,understanding,medium
+"SELECT instructor.*
+FROM instructor, teaches
+WHERE instructor.ID= teaches.ID;
+This query does which of the following operation?",All attributes of instructor and teaches are selected,All attributes of instructor are selected on the given condition,All attributes of teaches are selected on given condition,Only the some attributes from instructed and teaches are selected,All attributes of instructor are selected on the given condition,example,hard
+In SQL the spaces at the end of the string are removed by _______ function.,UPPER,STRING,TRIM,LOWER,TRIM,fill ups,medium
+The union operation is represented by, ?,U, –,*,U,memory,easy
+Which of the following is used to make a column’s value automatically increase for each new record?, AUTOINCREMENT,AUTOADD,INCREMENTAL,ADDAUTO, AUTOINCREMENT,understanding,medium
+How do you select all columns from a table named “students”?,SELECT * INTO students;,SELECT students.*;, SELECT ALL FROM students;,SELECT * FROM students;,SELECT * FROM students;,understanding,easy
+Which SQL function is used to round a number?,ROUND,RND,CIRCLE,LOOP,ROUND,memory,medium
+Which of the following is not an SQL aggregate function?,COUNT(),MAX(),CONCAT(),SUM(),CONCAT(),understanding,easy
+ The intersection operator is used to get the _____ tuples.,DIFFERENT,COMMON,ALL,REPEATING,COMMON,fill ups,medium
+ Which keyword defines a primary key constraint on a table in MySQL?,PRIMARY,UNIQUE,MAIN,PRIMARY KEY,PRIMARY KEY,memory,easy
+What is the maximum length of a table name in MySQL?,64 characters,128 characters,256 characters,512 characters,64 characters,memory,hard
+Which MySQL function returns the smallest integer value not less than a number?,CEILING(),FLOOR(),ROUNDUP(),TOP(),CEILING(),understanding,hard
+Which storage engine in MySQL supports transactions?,MEMORY,MERGE,InnoDB,MyISAM,InnoDB,understanding,hard
+The union operation automatically __________ unlike the select clause.,Adds tuples, Eliminates unique tuples,Adds common tuples,Eliminates duplicate,Eliminates duplicate,fill ups,easy
+"In the given query which of the keyword has to be inserted?
+
+INSERT INTO employee _____ (1002,Joey,2000);", Table,Values,Relation,Field,Values,fill ups,medium
+In which language MYSQL is written?, PYTHON, C/C+, JAVA, COBOL, C/C+,memory,medium
+To see the list of options provided by MYSQL which of the following command is used?,HELP,–HELP, -- HELP, ELP-, -- HELP,understanding,hard
+What do you mean by HOST in MYSQL?, HOST is the user name., HOST is the representation of where the MYSQL server is running.,HOST is the administration’s machine name.,NONE, HOST is the representation of where the MYSQL server is running.,understanding,medium
+"SELECT name ____ instructor name, course id
+FROM instructor, teaches
+WHERE instructor.ID= teaches.ID;
+Which keyword must be used here to rename the field name?",From, Rename,As,Join,As,memory,easy
+"SELECT * FROM employee WHERE dept_name=""Comp Sci"";
+In the SQL given above there is an error . Identify the error.",Dept_name,Employee, “Comp Sci”, From, “Comp Sci”,understanding,medium
+Which of the following SQL commands will delete all records from a table named customers but retain the table structure?,DROP TABLE customers;,TRUNCATE TABLE customers;,DELETE TABLE customers;,REMOVE ALL FROM customers;,TRUNCATE TABLE customers;,understanding,easy
+ In which SQL command would you use the WHERE clause?,Insert,Update,Create,Alter,Update,memory,easy
+What is the default sort order of the ORDER BY clause?, DESC,ASC,RANDOM,NONE,ASC,memory,easy
+Which SQL command is used to add a new column to an existing table?,ADD COLUMN,NEW COLUMN,INSERT COLUMN,ALTER TABLE,ALTER TABLE,memory,medium
+Which data type is used to store text values in MySQL?,Char,Int,Float,Bool,Char,understanding,medium
+"SELECT emp_name
+FROM department
+WHERE dept_name LIKE ’ _____ Computer Science’;
+Which one of the following has to be added into the blank to select the dept_name which has Computer Science as its ending string?",%, _,||, $,%,understanding,hard
+Which keyword is used to join two tables in SQL?,connect,link,join,combine,join,memory,easy
+Which MySQL function returns the current date and time?,now(),date(),today(),timestamp(),now(),memory,medium
+Which command is used to back up a MySQL database?,backup database,save database,mysqldump,mysqlsave,mysqldump,understanding,hard
+"SELECT name
+FROM instructor
+WHERE dept name = ’Physics’
+ORDER BY name;
+By default, the order by clause lists items in ______ order.",DESCENDING,SAME,ASCENDING,ANY,ASCENDING,example,easy
+"SELECT *
+FROM instructor
+ORDER BY salary ____, name ___;
+To display the salary from greater to smaller and name in ascending order which of the following options should be used?"," Ascending, Descending","Asc, Desc","Desc, Asc","Descending, Ascending","Desc, Asc",example,easy
+"SELECT name
+FROM instructor
+WHERE salary <= 100000 AND salary >= 90000;
+This query can be replaced by which of the following ?","SELECT name
+FROM instructor
+WHERE salary BETWEEN 90000 AND 100000;","SELECT name
+FROM employee
+WHERE salary <= 90000 AND salary>=100000;","SELECT name
+FROM employee
+WHERE salary BETWEEN 90000 AND 100000;","SELECT name
+FROM instructor
+WHERE salary BETWEEN 100000 AND 90000;","SELECT name
+FROM instructor
+WHERE salary BETWEEN 90000 AND 100000;",example,medium
+" For like predicate which of the following is true.
+
+i) % matches zero OF more characters.
+ii) _ matches exactly one CHARACTER.",i-only, ii-only, i & ii,NONE, i & ii,understanding,medium
+Which operator is used to compare if two values are not equal?,!=,<>, ><,Both A and B,Both A and B,understanding,medium
+Which MySQL data type is used to store large blocks of text?,text,largetext,char,bigchar,text,memory,hard
+________ locking mechanisms in MySQL ensure data consistency by preventing concurrent transactions from conflicting with each other's modifications.,optimistic,row-level,pessimistic,table-level,row-level,fill ups,hard
+Is a semicolon necessary after every query?,TRUE,FALSE,MAYBE,DON'T KNOW,TRUE,understanding,medium
+"(SELECT course id
+FROM SECTION
+WHERE semester = ’Fall’ AND YEAR= 2009)
+EXCEPT
+(SELECT course id
+FROM SECTION
+WHERE semester = ’Spring’ AND YEAR= 2010);
+This query displays",Only tuples from second part,Only tuples from the first part which has the tuples from second part,Tuples from both the parts,Tuples from first part which do not have second part,Tuples from first part which do not have second part,example,hard
+ The number of attributes in relation is called as its,CARDINALITY,DEGREE,TUPLES,ENTITY,DEGREE,memory,hard
+"_______ partitioning allows for dividing a large table horizontally based on a specific column, potentially improving query performance and manageability.",sharding,denormalization, normalization,horizontal,horizontal,fill ups,easy
+_____ clause is an additional filter that is applied to the result.,SELECT,GROUP BY,ORDER BY,HAVING,HAVING,fill ups,easy
+To see all the databases which command is used?, Show database;, Show databases;, Show database();, Show_all database;,A. Show databases;,understanding,medium
+"In the following statement, what do you mean by the 'student'?
+
+USE student;",DATABASE NAME,TABLE NAME,ROW NAME,TUPLE NAME,DATABASE NAME,example,easy
+"Suppose you have a table named to test and inside this table you have a column named CGPA now if you are asked to change the column named CGPA to total percentage, using alter command then which of the following statement you will write?", ALTER TABLE test CHANGE COLUMN 'cgpa’ 'total_percentage’ int;,"ALTER test table CHANGE 'cgpa’ ,'total_percentage’ int;", ALTER TABLE test CHANGE 'cgpa 'total_percentage’ int;,NONE, ALTER TABLE test CHANGE COLUMN 'cgpa’ 'total_percentage’ int;,understanding,easy
+"A(n) ________ view provides a virtual table based on a predefined query, potentially hiding complexity or filtering data for specific users.",materialized,indexed,updatable,derived,derived,fill ups,medium
+Suppose you are asked to drop a column using alter statement then which syntax you will follow?, ALTER table_name TABLE DROP COLUMN column_name;, ALTER TABLE table_name DROP COLUMN column_name;,BOTH,NONE, ALTER TABLE table_name DROP COLUMN column_name;,understanding,medium
+What does the show tables command do?, It displays all the tables of all the databases in the machine., It displays all the tables of a particular database., It only displays the current table.,NONE, It displays all the tables of a particular database.,memory,easy
+What is the function of DESCRIBE statement?,This statement helps us to get the details of the entire row.,This statement helps us to get the definition of all the tables.,This statement helps us to get the definition of a particular table at a time.,NONE,This statement helps us to get the definition of a particular table at a time.,memory,hard
+_________ joins are SQL server default,OUTER,INNER JOIN,EQUI,NONE,INNER JOIN,fill ups,easy
+The _____________ is essentially used to search for patterns in target string.,LIKE PREDICATE,NULL PREDICATE,IN PREDICATE,OUT PREDICATE,LIKE PREDICATE,fill ups,hard
+"The ________ join type returns all rows from the left table, even if there's no matching data in the right table (on the join condition).",inner, right outer,full outer,left outer,left outer,fill ups,easy
+If you are asked to delete the entire data of a table without disturbing the table definition then in such case which statement you will use?,DELETE,TRUNCATE,DROP,NONE,TRUNCATE,memory,medium
+Which of the following is the correct syntax for using the TRUNCATE statement?, TUNCATE TABLE-NAME;, TRUNCATE TABLE-NAME DATABASE-NAME;, TRUNCATE TABLE TABLE-NAME;, TRUNCATE DATABASE-NAME TABLE-NAME;, TRUNCATE TABLE TABLE-NAME;,understanding,medium
+From all the clauses in MYSQL what task is performed by the DISTINT clause?, It returns us the duplicate values, It returns us the unique values, It returns us the NULL values;,NONE, It returns us the unique values,understanding,hard
+Suppose you have 1000 records and you only want 100 records which of the following clause you will use?,SET LIMIT,LIMIT,HAVING,GROUP BY,LIMIT,memory,medium
+"What will the following statement return?
+
+SELECT * FROM student_details WHERE Student_name LIKE 'S%';
+Where student_details is the table name and student_name is the column name?",It will return the name starting with s,It will return the name ending with s,It will return the name who has s in between,NONE,A. It will return the name starting with s,understanding,easy
+"The ________ engine in MySQL is optimized for handling large datasets and complex queries, offering efficient indexing and storage mechanisms.", MyISAM,MEMORY, InnoDB,ARCHIVE, InnoDB,fill ups,medium
+"What will the following statement return?
+
+SELECT * FROM student_details WHERE Student_name LIKE 'S%';
+Where student_details is the table name and student_name is the column name?", It will return the name starting with s, It will return the name ending with s, It will return the name who has s in between,NONE, It will return the name starting with s,understanding,easy
+ Suppose you are asked to display all the names which have 'a' as their second character then which query pattern you will use?,_ _ a%;,_a_;,_a%;,_%a;,_a%;,understanding,hard
+ If you are asked to find out the names which only have 5 characters then what query pattern you will use?,%%%%%,_%_%_,_____,NONE, _____,understanding,hard
+"The ________ function aggregates data from multiple rows into a single value, commonly used with the GROUP BY clause.",HAVING,ORDER BY,HAVING,JOIN,HAVING,memory,easy
+Which key is commonly known as a subset of a super key?, Candidate key, Foreign key, Primary key, Unique key, Candidate key,memory,easy
+ Which operator checks whether the particular condition record exists in the table or not?,exists,is null,not null,in,exists,memory,easy
+"A(n) ________ transaction is a series of database operations treated as a single unit. If any part fails, the entire transaction is rolled back.",permanent,partial,atomic,incremental,atomic,fill ups,hard
+Which of the following syntax you will use to rename the table name?,ALTER TABLE table_name RENAME TO new_table_name;,RENAME new_table_name;,ALTER table_name RENAME new_table_name;,none,ALTER TABLE table_name RENAME TO new_table_name;,understanding,medium
+'MYSQL is the open source software' - What do you mean by this statement?, This means anyone can use this software., This means anyone can use this software., This means it gives the best security features,NONE, This means anyone can use this software.,understanding,easy
+Which SQL command is used for granting or revoking the rights?,DML,DDL,DCL,DQL,DCL,memory,medium
+"The ________ statement allows you to define a stored procedure, encapsulating a set of SQL statements for reusability and potentially improved performance.",CREATE FUNCTION, CREATE TRIGGER,CREATE PROCEDURE, CREATE VIEW,CREATE PROCEDURE,fill ups,easy
+Which MySQL function is used to get the current date and time?, DATETIME(),TODAY(), DATE(),NOW(),NOW(),memory,medium
+SELECT is a type of which SQL command?,DML,DQL,DDL,DCL,DQL,memory,hard
+ If you want to add a row in a table then which command you will use?, INSERT INTO,ADD,ALTER,CREATE, INSERT INTO,memory,easy
+Which type of join combines the result from both the tables and returns us the Cartesian product of the values?,RIGHT JOIN,LEFT JOIN,INNER JOIN,CROSS JOIN,CROSS JOIN,memory,easy
+Which of the following data type is used when it comes to store images in your database?,BIG INT ,BLOB,VARCHAR,INT,BLOB,understanding,hard
+"The ________ statement is used to grant specific permissions (e.g., SELECT, INSERT, DELETE) on tables or databases to users or roles.",alter user,show grants,grant,revoke,grant,fill ups,medium
+To know your MYSQL version and current date which of the following command you should use?,"VERSION, CURRENT_DATE();","SELECT VERSION, CURRENTDATE();","SELECT VERSION(), CURRENT_DATE;","SELECT VERSON(),CURRENT_DATE();","SELECT VERSION(), CURRENT_DATE;",understanding,medium
+In which form MYSQL query results are displayed?,list,tuple,rows and columns,list and tuples both,rows and columns,memory,easy
+________ helps to minimize data redundancy and improve data integrity in a relational database.,Denormalization,Normalization,Aggregation, Replication,Normalization,fill ups,medium
+"In MYSQL, can we write keywords in any letter case?",YES,NO,MAYBE,DON'T KNOW,YES,understanding,easy
+If you want to stop the processing query then which of the following command you should use?,QUIT,STOP,/c,C AND D BOTH,/c,memory,hard
+SELECT select_list FROM table_list WHERE row_constraint GROUP BY grouping_columns; Which of these is not optional?,select_list,table_list,row_constraint,grouping_columns,select_list,understanding,medium
+MySQL utilizes ________ to improve query performance by efficiently accessing frequently used data structures.,indexes,caching mechanisms,caching mechanisms,stored procedures,indexes,fill ups,hard
+"In inner join, result is produced by matching rows in one table with rows in another table.",TRUE,FALSE,MAYBE,DON'T KNOW,TRUE,understanding,easy
+The join where all possible row combinations are produced is called _________,OUTER,NATURAL,INNER JOIN,CARTESIAN,CARTESIAN,memory,hard
+The clause that filters JOIN results is called _________,WHERE ,SORT,GROUP BY,GROUP,WHERE ,memory,easy
+"A(n) ________ schema defines the physical layout of data storage, including file organization and access methods.",conceptual,physical,logical,none,physical,fill ups,medium
+CROSS JOIN and JOIN are similar to __________,INNER JOIN,NATURAL JOIN,OUTER JOIN,CARTESIAN JOIN,INNER JOIN,fill ups,easy
+The comma operator can also be used to join tables.,TRUE,FALSE,MAYBE,DON'T KNOW,TRUE,understanding,medium
+"The ________ data type is ideal for storing large text content, such as articles or product descriptions.",varchar,char,int,text,text,fill ups,easy
+What is joining a table to itself called?,COMPLETE,SELF,OBSOLETE,CROSS,SELF,memory,easy
+ In which join all the rows from the left table appear in the output irrespective of the content of the other table?,RIGHT JOIN,LEFT JOIN,INNER JOIN,OUTER JOIN,LEFT JOIN,memory,medium
+The join in which all the rows from the right table appear in the output irrespective of the content of the other table is ___________,CARTESIAN JOIN, CROSS JOIN, INNER JOIN,RIGHT JOIN,RIGHT JOIN,memory,easy
+"MySQL supports ________ triggers, which automatically execute predefined SQL statements in response to specific database events (e.g., INSERT, UPDATE).",recursive,cascading,data-driven,scheduled,data-driven,fill ups,hard

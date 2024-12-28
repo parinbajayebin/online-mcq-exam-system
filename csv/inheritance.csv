@@ -1,0 +1,658 @@
+ Which keyword is used to inherit a class in C++?, extends, implements, inherits, public/private/protected, public/private/protected,memory,easy
+Which type of inheritance leads to the diamond problem in C++?, Single Inheritance,Multilevel Inheritance, Multiple Inheritance,d) Hierarchical Inheritance,Multiple Inheritance,understanding,hard
+What is the type of inheritance where one class inherits from multiple classes?,ÿSingle Inheritance,Multilevel Inheritance,ÿMultiple Inheritance,Hierarchical Inheritance, Multiple Inheritance,memory,easy
+"By default, the members of the base class are _____ in the derived class.",private,ÿpublic,protected,None of the above,private,fill ups,medium
+Which of the following can be inherited from the base class?,Public members only,Private members only,Both public and protected members,"All members (public, protected, and private)", Both public and protected members,understanding,medium
+What is Inheritance in C++?,Wrapping of data into a single class,Deriving new classes from existing classes,Overloading of classes,ÿClasses with same names,Deriving new classes from existing classes,understanding,easy
+How many specifiers are used to derive a class?,1,2,3,4,3,memory,hard
+What is the process of defining a new class based on an existing class in C++ called?,ÿInheritance,Composition,Encapsulation,Polymorphism,ÿInheritance,memory,easy
+Which specifier makes all the data members and functions of base class inaccessible by the derived class?,private,protected,public,both private and protected,private,memory,easy
+ÿIf a class is derived privately from a base class then __________________________,no members of the base class is inherited,all members are accessible by the derived class,all the members are inherited by the class but are hidden and cannot be accessible,ÿno derivation of the class gives an error,all the members are inherited by the class but are hidden and cannot be accessible,fill ups,medium
+"What will be the output of the following C++ code?                              #include <iostream>
+#include <string>
+using namespace std;
+class A
+{
+	int a, b;
+	float d;
+   public:
+	void change(int i){
+		a = i;
+	}
+	void value_of_a(){
+		cout<<a;
+	}
+};
+ 
+class B: private A
+{
+ 
+};
+ 
+int main(int argc, char const *argv[])
+{
+	B b;
+	cout<<sizeof(B);
+	return 0;
+}",8,12,error,segmentation fault,12,example,hard
+"What will be the output of the following C++ code?
+
+#include <iostream>
+#include <string>
+using namespace std;
+class A
+{
+	float d;
+    public:
+	int a;
+	void change(int i){
+		a = i;
+	}
+	void value_of_a(){
+		cout<<a;
+	}
+};
+ 
+class B: public A
+{
+	int a = 15;
+    public:
+	void print(){
+		cout<<a;
+	}
+};
+ 
+int main(int argc, char const *argv[])
+{
+	B b;
+	b.change(10);
+	b.print();
+	b.value_of_a();
+ 
+	return 0;
+}",Hello this is class A,Hello this is class B,error,segmentation fault,Hello this is class B,example,medium
+Which statement is incorrect about virtual function.,ÿThey are used to achieve runtime polymorphism,They are used to hide objects,Each virtual function declaration starts with the virtual keyword,All of the mentioned,They are used to hide objects,understanding,medium
+The concept of deciding which function to invoke during runtime is called ______________________,ÿlate binding,dynamic linkage,static binding,both late binding and dynamic linkage,both late binding and dynamic linkage,fill ups,hard
+What is a pure virtual function?,ÿA virtual function defined inside the base class,A virtual function that has no definition relative to the base class,ÿA virtual function that is defined inside the derived class,Any function that is made virtual,A virtual function that has no definition relative to the base class,memory,easy
+The ?????. inherits some or all of the properties of the ???.. class.,"base, derived","derived, base","derived, initial","base, final","derived, base",fill ups,easy
+"When the inheritance is private, the private methods in base class are __________ in the derived class (in C++).",inaccessible,accessible,protected,public,inaccessible,fill ups,easy
+Which design patterns benefit from the multiple inheritances?,Adapter and observer pattern,Code pattern,Glue pattern,None of the mentioned,Adapter and observer pattern,memory,hard
+ÿWhat is meant by multiple inheritance?,Deriving a base class from derived class,Deriving a derived class from base class,Deriving a derived class from more than one base class,None of the mentioned,Deriving a derived class from more than one base class,memory,medium
+"What will be the order of execution of base class constructors in the following method of inheritance.class a: public b, public c {...};",ÿb(); c(); a();,ÿc(); b(); a();,a(); b(); c();,ÿb(); a(); c();,b(); c(); a();,understanding,easy
+Inheritance allow in C++ Program?,Class Re-usability,Creating a hierarchy of classes,Extendibility,All of the above,All of the above,memory,easy
+Can we pass parameters to base class constructor though derived class or derived class constructor?,yes,no,maybe,can't say,yes,understanding,medium
+ÿWhat are the things are inherited from the base class?,Constructor and its destructor,Operator=() members,Friends,All of the above,All of the above,understanding,hard
+Which of the following advantages we lose by using multiple inheritance?,Dynamic binding,Polymorphism,Both Dynamic binding & Polymorphism,None of the mentioned,Both Dynamic binding & Polymorphism,memory,hard
+"What is the output of this program?
+
+         
+Note:Includes all required header files
+ using namespace std;
+  class Base
+    {
+        public:
+            Base(){}
+            ~Base(){}
+            protected:
+            private: 
+    };
+    class Derived:public Base
+    {
+        public:
+            Derived(){}
+            Derived(){}
+            private:
+            protected:
+    };
+  int main()
+  {
+     cout << ""Executed"" << endl;
+  } ",executed,error,runtime error,None of the above,error,example,medium
+"What is the output of this program?
+
+         
+Note:Includes all required header files
+
+    using namespace std;
+    int main() 
+    {
+        string s = ""a long string"";
+        s.insert(s.size() / 2, "" * "");
+        cout << s << endl;
+        return 0;
+    }",long* string,a long st*ring,Depends on compiler,None of the mentioned,Depends on compiler,example,hard
+"What is the output of this program?
+
+        
+Note:Includes all required header files 
+          
+using namespace std;
+struct a
+ {
+    int p;
+ };
+struct b
+ {
+    int* x;
+ };
+struct c : public a, public b
+ {
+ };
+int main()
+ {
+    c* p = new c;
+    p->x = 0;
+    cout << ""Inherited"";
+    return 0;
+ } ",inherited,error,runtime error,None of the above,inherited,understanding,easy
+"What is the output of this program?
+
+        
+Note:Includes all required header files
+
+using namespace std;
+ 
+class Base1 {
+ public:
+     Base1()
+     { cout << "" Base1"" << endl;  }
+};
+  
+class Base2 {
+ public:
+     Base2()
+     { cout << ""Base2"" << endl;  }
+};
+  
+class Derived: public Base1, public Base2 {
+   public:
+     Derived()
+     {  cout << ""Derived"" << endl;  }
+};
+  
+int main()
+{
+   Derived d;
+   return 0;
+}
+  ",ÿCompiler Dependent,Base1 Base2 Derived,Base2 Base1 Derived,ÿCompiler Error,Base1 Base2 Derived,understanding,medium
+"Which of the following is true about the following program
+
+           
+Note:Includes all required header files
+using namespace std;
+   class Base1 {
+ public:
+     ~Base1()  { cout << "" Base1"" << endl; }
+};
+   
+class Base2 {
+ public:
+     ~Base2()  { cout << "" Base2"" << endl; }
+};
+   
+class Derived: public Base1, public Base2 {
+   public:
+     ~Derived()  { cout << "" Derived"" << endl; }
+};
+   
+int main()
+{
+   Derived d;
+   return 0;
+} ",Base1 Base2 Derived,Derived Base2 Base1,Derived,Compiler Dependent,Derived Base2 Base1,example,easy
+"Assume that an integer takes 2 bytes and there is no alignment in following classes, predict the output.
+
+        
+Note:Includes all required header files
+using namespace std;
+    class base {
+    int arr[15];
+};
+ 
+class b1: public base { };
+ 
+class b2: public base { };
+ 
+class derived: public b1, public b2 {};
+ 
+int main(void)
+{
+  cout << sizeof(derived);
+  return 0;
+}",30,60,0,120,120,example,medium
+"What will be the output of this program?
+
+#include <iostream>
+
+using namespace std;
+class Base {};
+class Derived: public Base {};
+ 
+int main()
+{
+    Base *p = new Derived;
+    Derived *q = new Base;
+}","error: invalid conversion from ""Derived*"" to ""Base*""",No Compiler Error,"error: invalid conversion from ""Base*"" to ""Derived*""",Runtime Error,"error: invalid conversion from ""Base*"" to ""Derived*""",memory,easy
+"What will be the output of the following program?
+
+#include <iostream>
+
+using namespace std;
+   class Base
+{
+public:
+    int lfc()  { cout << ""Base::lfc() called""; }
+    int lfc(int i)  { cout << ""Base::lfc(int i) called""; }
+};
+ 
+class Derived: public Base
+{
+public:
+    int lfc() {  cout << ""Derived::lfc() called""; }
+};
+ 
+int main()
+{
+    Derived d;
+    d.lfc(5);
+    return 0;
+}",Base::lfc(int i) called,Derived::lfc() called,Base::lfc() called,Compiler Error,Compiler Error,example,hard
+"State whether the following statements about inheritance are True or False. i) A public member of a class can be accessed by its own objects using the dot operator. ii) While inheriting, the private members of the base class will never become the members of its derived class.","True, False","False,True","True,True","False,False","True, False",memory,medium
+"In inheritance, order of execution of base class and derived class destructors are:",Base to derived,Derived to base,ÿRandom order,None of the above,None of the above,memory,hard
+What is the difference between protected and private access specifiers in inheritance?,Private member is not inheritable and not accessible in derived class.,Protected member is inheritable and also accessible in derived class.,Both are inheritable but private is accessible in the derived class.,Both are inheritable but protected is not accessible in the derived class.,Protected member is inheritable and also accessible in derived class.,memory,easy
+Which value is placed in the base class?,ÿDerived values,Default type values,Both A & B,None of the mentioned,Default type values,memory,medium
+The friend functions and the member functions of a friend class can directly access the______________ data.,Private and protected,Private and public,Protected and public,"Private, protected and public",Private and protected,fill ups,easy
+"What will be the order of execution of base class constructors in the following method of inheritance. class a: public b, virtual public c {...};",b(); c(); a();,ÿc(); b(); a();,ÿa(); b(); c();,b(); a(); c();,ÿc(); b(); a();,understanding,medium
+"class X, class Y and class Z are derived from class BASE. This is ______ inheritance.",multiple,Multilevel Inheritance,hierarchial,single,hierarchial,memory,easy
+ÿReusability of the code can be achieved in CPP through ______ .,Polymorphism,Encapsulation,Inheritance,Both A and C,Inheritance,memory,easy
+"What will be the output of the following program?
+
+         
+Note:Includes all required header files
+class find {
+public:
+   void print()  { cout <<"" In find""; }
+};
+  
+class course : public find {
+public:
+   void print() { cout <<"" In course""; }
+};
+  
+class tech: public course { };
+  
+int main(void)
+{
+  tech t; 
+  t.print();
+  return 0;
+}",In find,In course,Compiler Error: Ambiguous call to print(),None of the above,In course,example,hard
+Which symbol is used to create multiple inheritance?,Dot,Comma,Dollar,None of these,Comma,memory,hard
+"27.ÿ___________ inheritance may lead to duplication of inherited members from a ""grandparent"" base class.",Multipath,Multiple,Multilevel,Hierarchical Inheritance,Multipath,fill ups,medium
+ÿC++ Inheritance relationship is?,association,Is-A,Has-A,None of these ,Is-A,understanding,easy
+Private members of the class are not inheritable.,TRUE,FALSE,Maybe,Can't say,FALSE,understanding,medium
+What does inheriatance allows you to do?,create a class,create a hierarchy of classes,access methods,None of the mentioned,create a hierarchy of classes,understanding,easy
+What is the syntax of inheritance of class?,class name,class name : access specifer,class name : access specifer class name,class name : access specifer class name,class name : access specifer class name,memory,easy
+How many types of inheritance are there in c++?,2,3,4,5,5,memory,medium
+What is meant by containership?,class contains objects of other class types as its members,ÿclass contains objects of other class types as its objects,both a & b,none of the mentioned,class contains objects of other class types as its members,understanding,hard
+How many types of constructor are there in C++?,1,2,3,4,3,memory,hard
+"In case of inheritance where both base and derived class are having constructors, when an object of derived class is created then___________ .",constructor of derived class will be invoked first,constructor of base class will be invoked first,constructor of derived class will be executed first followed by base class,constructor of base class will be executed first followed by derived class,constructor of base class will be executed first followed by derived class,understanding,medium
+"If the derived class is struct, then default visibility mode is _______ .",public,protected,private,struct can?t inherit class,public,fill ups,easy
+"If base class has constructor with arguments, then it is ________________ for the derived class to have constructor and pass the arguments to base class constructor.",optional,mandatory,compiler dependent ,error,mandatory,memory,medium
+"In Multipath inheritance, in order to remove duplicate set of records in child class, we ___________ .",Write Virtual function in parent classes,Write virtual functions is base class,Make base class as virtual base class,All of these,Make base class as virtual base class,memory,hard
+"In case of inheritance where both base and derived class are having constructor and destructor, then which if the following are true ?",ÿConstructors are executed in their order of derivation,Constructors are executed in reverse order of derivation,Destructors are executed in their order of derivation,Destructors are executed in reverse order of derivation,Destructors are executed in their order of derivation,understanding,medium
+What is the difference between protected and private access specifiers in inheritance?,private member is not inheritable and not accessible in derived class.,protected member is inheritable and also accessible in derived class,Both are inheritable but private is accessible in the derived class,protected member is inheritable and also accessible in base class,Both are inheritable but protected is not accessible in the derived class.,understanding,easy
+Constant function in C++ can be declared as,void display(),void display() const,const void display(),void const display(),void display() const,memory,hard
+"True and false statements about inline function in given C++ code example is/are
+(I)Static function of a class can be called by class name using scope resolution operator i.e. : :
+
+(II)Static function can receive both static and non-static data members of a class
+
+(III)Static function is not the part of an object of a class",ÿI and II,ÿI only,I and III,"I, II and III",CÿI and III,understanding,medium
+Which of the following functions are provided by compiler by default if we don?t write in a C++ class?,Copy constructor,Assignment,Constructor,ÿAll the above,Assignment,memory,hard
+When our function doesn?t need to return anything means what we will as parameter in function?,void,ÿblank space,both a & b,none of the mentioned,ÿblank space,understanding,easy
+Which function can be called without using an object of a class in C++,static,Inline,Friends,Constant,static,memory,easy
+A member declared as ????.. is accessible by the member functions within its class and any class immediately derived from it.,protected,private,public,friend,protected ,fill ups,easy
+"When the base class is publicly inherited, public members of the base class become ????. of the derived class.",private members,protected members,public members,not inherited,public members,memory,easy
+"n protected derivation, both the public and protected members of the base class become ????. members of the derived class.",protected,private,public,friend,protected,understanding,medium
+" While the friend functions and the member functions of a friend class can have direct access to both the private and protected data, the member functions of a derived class can directly access only the ???? data.",protected,"derive,base",public,friend,protected,fill ups,easy
+"In ????????. inheritance, the constructors are executed in the order of inheritance.",multipath,multiple,Multilevel,Hierarchical Inheritance,multilevel,memory,hard
+"In ??????.. inheritance, the base classes are constructed in the order in which they appear in the deceleration of the derived class.",Multipath,Multiple,private,multilevel,multiple,memory,medium
+??????.. inheritance may lead to duplication of inherited members from a ?grandparent? base class.,multipath,multiple,multilevel,friend,multipath,fill ups,easy
+"In compile time polymorphism, compiler is able to select the appropriate function for a particular call at the compile time itself, which is known as ????",early binding,static binding,static linking,all of these ,static binding,understanding,hard
+"?????. binding means that, an object is bound to its function call at compile time.",late,static binding,dynamic,fixed,static binding,fill ups,medium
+"C++ supports run time polymorphism with the help of virtual functions, which is called ?????.. binding.",Dynamic binding,run time,early ,static,dynamic,memory,easy
+State whether the following statements about pointers in C++ are True. i) A pointer can be incremented (++) or decremented (?) ii) Any integer can be added to or subtracted from a pointer iii) One pointer can be subtracted from another),i and ii only,ii and iii only,ÿi and iii only,"ÿAll i, ii and iii","ÿAll i, ii and iii",understanding,medium
+"ÿ??????. are also known as generic pointers, which refer to variables of any type.",void pointers,null pointers,this pointer,base pointer,void pointers,fill ups,easy
+The pointers which are not initialized in a program are called ?????..,void,null pointers,this pointer,base pointer,null pointers,fill ups,easy
+???????? is useful in creating objects at run time.,void,null pointers,base,object pointers,object pointers,fill ups,medium
+A ???????. refers to an object that that currently invokes a member function.,void,null pointers,this pointer, base pointer,this pointer,memory,easy
+The ???????. cannot be directly used to access all the members of the derived class.,void pointers,null pointers,this pointer,base pointer,base pointer,understanding,medium
+Run time polymorphism is achieved only when a ??????.. is accessed through a pointer to the base class.,member function,virtual function ,static function ,real function ,virtual function ,understanding,hard
+"If a ????????? is defined in the base class, it need not be necessarily redefined in the derived class.",member function,virtual function ,static function ,real function ,virtual function ,fill ups,hard
+"State whether the following statements about virtual functions are True or False.
+i) A virtual function, equated to zero is called pure virtual function.
+
+ii) A class containing pure virtual function is called an abstract class","true, true","true,false","false,true","false,false","true,true",understanding,easy
+The main objective of an abstract base class is to provide some traits to the derived class and to create a ?????????. required for achieving run time polymorphism.,void pointers,null pointers,this pointer,base pointer,base pointer,memory,medium
+State whether the following statements about virtual functions is/are True. i) The virtual function must be member of some class ii) virtual functions cannot be static members iii) A virtual function can not be a friend of another class.,i and ii only,ÿii and iii only,ÿi and iii only,"All i, ii and iii",i and ii only,understanding,easy
+The pointer to function is known as ???????. function.,forward,pointer,callback,backward,callback,memory,hard
+"We can manipulate a pointer with the indirection operator (*), which is also known as ????????",reference operator,dereference operator,direction operator,indirection operator ,dereference operator,memory,hard
+"If we attempt to dereference an uninitialized pointer, it will ???????.. by referring to any other location in memory.",cause compile time error,don't know,cause run time error,executes,cause run time error,fill ups,medium
+Which among the following best describes polymorphism?,ÿIt is the ability for a message/data to be processed in more than one form,ÿIt is the ability for a message/data to be processed in only 1 form,It is the ability for many messages/data to be processed in one way,It is the ability for undefined message/data to be processed in at least one way,It is the ability for a message/data to be processed in more than one form,understanding,easy
+What do you call the languages that support classes but not polymorphism?,Class based language,Procedure Oriented language,Object-based language,"If classes are supported, polymorphism will always be supported",Object-based language,memory,medium
+Which among the following is the language which supports classes but not polymorphism?,SmallTalk,Java,C++,Ada,Ada,understanding,hard
+"ÿIf same message is passed to objects of several different classes and all of those can respond in a different way, what is this feature called?",Inheritance,Polymorphism,Overloading ,Overriding,Ploymorphism,understanding,medium
+"5. Which class/set of classes can illustrate polymorphism in the following code?
+
+abstract class student
+{
+   public : int marks;
+   calc_grade();
+}
+class topper:public student
+{
+    public : calc_grade()
+    { 
+        return 10; 
+    }
+};
+class average:public student
+{ 
+     public : calc_grade()
+     {
+         return 20; 
+     }
+};
+class failed{ int marks; };",Only class student can show polymorphism,Only class student and topper together can show polymorphism,"ÿAll class student, topper and average together can show polymorphism",Class failed should also inherit class student for this code to work for polymorphism,for polymorphism,example,hard
+What does the term ?Polymorphism? mean in C++?,The ability to have many classes,The ability to have many methods,The ability to take on many forms,ÿThe ability to have many variables,The ability to take on many forms,understanding,easy
+ÿWhich of the following best describes runtime polymorphism?,Function overloading,Operator overloading,Templates,Virtual functions,Virtual functions,understanding,medium
+ÿWhat keyword is used to declare a function as polymorphic in the base class?,ÿpolymorphic,ÿoverride,virtual,abstract,virtual,memory,easy
+How is compile-time polymorphism achieved in C++?,Function overriding,Function overloading and operator overloading,ÿUsing virtual functions,Using abstract classes,Function overloading and operator overloading,understanding,medium
+"In the context of polymorphism, what does ?overriding? mean?",ÿUsing the same function name in different classes,Changing the return type of a function in a derived class,Changing the return type of a function in a derived class,Calling a function multiple times with different arguments,Providing a new implementation of a base class function in a derived class,memory,hard
+Which of the following is NOT a type of polymorphism?,Runtime Polymorphism,Compile-time Polymorphism,Overloading Polymorphism,External Polymorphism,External Polymorphism,memory,easy
+What is the primary requirement for function overriding?,Both the base class and derived class functions must have different names,The derived class function must be virtual,The base class function must be virtual,Both functions must be static,The base class function must be virtual,understanding,medium
+How can you prevent a class from being subclassed further?,By making the class virtual,ÿBy making the class sealed,By using the final keyword,By using the end keyword,By using the final keyword,memory,hard
+"ÿIf a base class destructor is not virtual, what can happen?",The derived class destructor will not be called,The base class destructor will not be called,It will cause a compile-time error,The program will crash,The derived class destructor will not be called,understanding,medium
+"If a virtual function is defined in the base class, it?",Must be overridden in the derived class,Cannot be accessed by objects of the derived class,Can optionally be overridden in the derived class,Will cause an error in the derived class,Can optionally be overridden in the derived class,fill ups,hard
+Compile time polymorphism in C++ language are,Operator Overloading,Function Overloading ,Function Overriding ,Both a and b,Both a and b,memory,easy
+ÿC++ abstract class can contain,Pure Virtual Funtion ,Non-virtual function,Only pure virtual function ,BothPure virtual and non-virtual,BothPure virtual and non-virtual,understanding,medium
+ÿFalse statements about function overloading is, Defining multiple functions with same name in a class is called function overloading, Overloaded function must differ in their order and types of arguments., Overloaded functions should be preceded with virtual keyword, No statement is false, Overloaded functions should be preceded with virtual keyword,understanding,medium
+ÿFollowing keyword is used before a function in a base class to be overridden in derived class in C++,override,virtual function ,void,none,virtual function,memory,easy
+Which of the following cannot be overloaded in C++?,Increment Operator,Constructor,Destructor,New and Delete operator,Destructor,understanding,medium
+Which is the correct declaration of pure virtual function in C++, virtual void func = 0;, virtual void func() = 0;, virtual void func(){0};, void func() = 0;, virtual void func() = 0;,memory,hard
+"In a class, pure virtual functions in C++ is used", To create an interface, To make a class abstract, To force derived class to implement the pure virtual function, All the above, All the above,understanding,medium
+ÿWhich public member of a base class cannot be inherited?, Constructor, Destructor, Both A & B,Only B,Both A & B,memory,medium
+How many VPTR is created internally for a base class and a derived class,0,1,2,3,1,memory,hard
+ÿNumber of virtual table created for a base and a derived class is,0,1,2,3,2,memory,hard
+ÿInterface class in C++ is created by,Using interface keyword before class,Using pure virtual function,Using pure virtual function and virtual function both,Using class keyword,Using pure virtual function,understanding,easy
+ÿWhich statements are true about an abstract class, Abstract class has at least one pure virtual function., Pointer for an abstract class can be created, Object of an abstract class cannot be created., All are correct., All are correct.,understanding,easy
+Run time polymorphism in C++ Program is, New and delete operator overloading, ++ and ? ? operator overloading,:: operator overloading,None, None,understanding,medium
+How can we restrict dynamic allocation of objects of a class using new?,By overloading new operator,By making an empty private new operator.,By making an empty private new and new[] operators,By overloading new operator and new[] operators,By making an empty private new and new[] operators,understanding,hard
+Run time binding is related to, Function overriding,Operator overloading, A & B,None, Function overriding,memory,easy
+Which function cannot be overloaded in C++,Constructor,Class destructor,Both a and b,none,Class Destructor,understanding,medium
+Operators can be overloaded in C++ is/are,New,Delete,both,All can be overloaded,All can be overloaded,memory,hard
+"ÿIf a class contains pure virtual function, then it is termed as____________________ .",Virtual class,Sealed class,Pure Local class,ÿAbstract Class,ÿAbstract Class,fill ups,easy
+Which of the followings are true about Virtual functions?,They must be non-static member function of the class,They cannot be friends,Constructor Functions cannot be virtual,All of these,All of these,understanding,medium
+Find the wrong statement/s about Abstract Class.,We can?t create its objects.,We can?t create pointers to an abstract class.,It contains at least one pure virtual function.,We can create references to an abstract class.,ÿWe can?t create pointers to an abstract class.,understanding,hard
+Run time polymorphism can be achieved with______ÿ,Virtual Base class,Container class,Virtual function,Both a and c,Virtual function,fill ups,easy
+We can create objects of the abstract class.,TRUE,FALSE,can't say,don't know,FALSE,understanding,easy
+Runtime polymorphism is achieved only when a virtual function is accessed through a pointer to the base class.,TRUE,FALSE,can't say,don't know,TRUE,memory,hard
+"In C++, can a derived class object access private members of its base class directly?",Yes,No,Only if using friend functions,Only if using protected inheritance,No,understanding,easy
+Which of the following statements about multiple inheritance in C++ is true?,C++ does not support multiple inheritance,"In multiple inheritance, a class can inherit from more than one base class",Multiple inheritance can lead to diamond inheritance problem,Multiple inheritance can only be achieved through virtual inheritance,"In multiple inheritance, a class can inherit from more than one base class",understanding,medium
+"What is the output of the following code snippet?
+
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+class Base {
+public:
+    virtual void display() {
+        cout << ""Display from Base"" << endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    void display() override {
+        cout << ""Display from Derived"" << endl;
+    }
+};
+
+int main() {
+    Base *ptr = new Derived;
+    ptr->display();
+    delete ptr;
+    return 0;
+}",Display from Base,Display from Derived,Compilation  Error,Runtime Error,Display from Derived,example,hard
+"Predict the output
+
+#include<iostream>
+using namespace std;
+class A
+{
+    int i;
+public:
+    A(int ii = 0) : i(ii) {}
+    void show() {  cout << i << endl;  }
+};
+
+class B
+{
+    int x;
+public:
+    B(int xx) : x(xx) {}
+    operator A() const {  return A(x); }
+};
+
+void g(A a)
+{
+    a.show();
+}
+
+int main()
+{
+    B b(10);
+    g(b);
+    g(20);
+    return 0;
+}
+Compiler Error","10,20","10,10","20,20","20,10","10,20",example,hard
+Which of the following operator(s) cannot be overloaded?,. (Member Access or Dot operator),?: (Ternary or Conditional Operator ),:: (Scope Resolution Operator),All of the above,All of the above,memory,medium
+"predict output:   #include<iostream>
+using namespace std;
+
+class Point {
+private:
+  int x, y;
+public:
+  Point() : x(0), y(0) { }
+  Point& operator()(int dx, int dy);
+  void show() {cout << \""x = \"" << x << \"", y = \"" << y; }
+};
+
+Point& Point::operator()(int dx, int dy)
+{
+    x = dx;
+    y = dy;
+    return *this;
+}
+
+int main()
+{
+  Point pt;
+  pt(3, 2);
+  pt.show();
+  return 0;
+}","x = 3, y = 2",Compiler Error,"x = 2, y = 3","x = 2, y = 2","x = 3, y = 2",example,hard
+Which of the following operators should be preferred to overload as a global function rather than a member method?,Postfix ++,Comparison Operator,Insertion Operator <<,Prefix++,Insertion Operator <<,memory,medium
+"Which of the following operators are overloaded by default by the compiler in every user defined classes even if user has not written?
+1) Comparison Operator ( == )
+2) Assignment Operator ( = ) ",Both 1 and 2,ONLY 1,Only 2,None ,Only 2,understanding,easy
+Which among the following is a special type of function in a class?,Inline function,Virtual function,Constructor,Static function,Constructor,memory,easy
+"In C++, can you declare a constructor as virtual?",Yes,No,Only if it has parameters,Only if it is a copy constructor,No,understanding,medium
+What is the result in attempting to instantiate an object of an abstract class in C?,Compilation errorÿ,Run-time error,"No error, but the program may crash","No error, the object is instantiated",Compilation errorÿ,understanding,hard
+"Output?
+
+#include <iostream>  
+using namespace std;
+
+class Base1 {
+ public:
+     ~Base1()  { cout << \"" Base1\'s destructor\"" << endl; }
+};
+  
+class Base2 {
+ public:
+     ~Base2()  { cout << \"" Base2\'s destructor\"" << endl; }
+};
+  
+class Derived: public Base1, public Base2 {
+   public:
+     ~Derived()  { cout << \"" Derived\'s destructor\"" << endl; }
+};
+  
+int main()
+{
+   Derived d;
+   return 0;
+}","Base1\'s destructor
+Base2\'s destructor
+Derived\'s destructor","Derived\'s destructor
+Base2\'s destructor
+Base1\'s destructor",Derived\'s destructor,Compiler Dependent,"Derived\'s destructor
+Base2\'s destructor
+Base1\'s destructor",example,easy
+What is the purpose of a virtual destructor in C++?,To prevent memory leaks when deleting objects of derived classes through base class pointers.,o prevent memory leaks when deleting objects of base classes.,To ensure proper destruction of derived class objects when deleted through a base class pointer.,To ensure proper memory alignment for polymorphic objects.ÿ,To ensure proper destruction of derived class objects when deleted through a base class pointer.,memory,easy
+Which of the following is true about virtual functions?,They cannot be overloaded.,They can be static.ÿÿÿ,They are resolved at compile-time.,hey are resolved at runtime.,hey are resolved at runtime.,memory,medium
+What is the syntax of calling a virtual function from a derived class in C++?,virtual_function(),Base::virtual_function(),this->virtual_function(),Derived::virtual_function(),Base::virtual_function(),memory,medium
+What is the difference between static binding and dynamic binding in C++?,Static binding occurs at compile time while dynamic binding occurs at runtime.,Static binding occurs at runtime while dynamic binding occurs at compile time,Static binding occurs when linking while dynamic binding occurs when executing.ÿÿÿ,Static binding occurs in inheritance while dynamic binding occurs in polymorphism.,Static binding occurs at compile time while dynamic binding occurs at runtime.,understanding,hard
+"Assume that an integer takes 4 bytes and there is no alignment in following classes, predict the output.
+
+#include<iostream>
+using namespace std;
+
+class base {
+    int arr[10];
+};
+
+class b1: public base { };
+
+class b2: public base { };
+
+class derived: public b1, public b2 {};
+
+int main(void)
+{
+  cout << sizeof(derived);
+  return 0;
+}",40,80,0,4,80,example,hard
+Can a derived class have more than 1 base class with a virtual function?,yes,no,"Yes, but only if the virtual functions have the same name.","Yes, but only if the virtual functions have different return types.",yes,understanding,easy
+Which feature allows a function to behave differently based on the number of types of its arguments ?,Operator overloading,Function overloadingÿÿÿ,Inheritance,Encapsulation,Function overloadingÿÿÿ,memory,easy
+What is the effect of declaring a constructor as virtual?,It prevents memory leaks,It allows dynamic binding,It enables polymorphismÿÿÿ,It raises a compilation error,It allows dynamic binding,understanding,easy
+"#include<iostream>
+ 
+using namespace std;
+class P {
+public:
+   void print()  { cout <<\"" Inside P\""; }
+};
+ 
+class Q : public P {
+public:
+   void print() { cout <<\"" Inside Q\""; }
+};
+ 
+class R: public Q { };
+ 
+int main(void)
+{
+  R r; 
+  r.print();
+  return 0;
+}      provide output:",Inside P,Inside Q,Compiler Error: Ambiguous call to print(),don't know,Inside Q,example,medium
+"What is the order of Constructors call when the object of derived class B is declared, provided class B is derived from class A?",Constructor of A followed by B,ÿConstructor of B followed by A,Constructor of A only,Constructor of B only,Constructor of A followed by B,understanding,hard
+"What is the order of Destructors call when the object of derived class B is declared, provided class B is derived from class A?",Destructor of A followed by B,ÿDestructor of B followed by A,Destructor of A only,Destructor of B only,ÿDestructor of B followed by A,understanding,hard
+"What will be the output of the following C++ code?
+
+#include <iostream>
+#include <string>
+using namespace std;
+class Mammal
+{
+   public:
+	virtual void Define(){
+		cout<<""I'm a Mammal\n"";
+	}
+};
+ 
+class Human: public Mammal
+{
+   public:
+	void Define(){
+		cout<<""I'm a Human\n"";
+	}
+};
+ 
+class Male: public Human
+{
+   public:
+	void Define(){
+		cout<<""I'm a Male\n"";
+	}
+};
+ 
+class Female: public Human
+{
+   public:
+	void Define(){
+		cout<<""I'm a Female\n"";
+	}
+};
+ 
+int main(int argc, char const *argv[])
+{
+	Mammal *M;
+	Male m;
+	Female f;
+	*M = m;
+	M->Define();
+	return 0;
+}",ÿI?m a Male,I?m a Mammal,Error,Segmentation Fault,Segmentation Fault,example,easy
+Virtual functions in C++ tells the compiler to perform ______________________ on such functions.,static binding,ÿlate binding,compile time binding,no binding,late binding,fill ups,medium
+ÿPick the correct statement.,Virtual function can have different names in the base and derived class,Virtual function cannot be applied in Multiple Inheritance classes,ÿVirtual function are different in definitions only,Virtual function does early binding,Virtual function are different in definitions only,memory,easy
+"What happens if the following C++ program is compiled?
+
+#include <iostream>
+#include <string>
+using namespace std;
+class A
+{
+	int a;
+   public: 
+	A(){
+		a = 0;
+	}
+	void show(){
+		a++;
+		cout<<""a: ""<<a<<endl;
+	}
+};
+ 
+class B: private A
+{
+   public:
+	void show(){
+		show();
+	}
+};
+ 
+int main(int argc, char const *argv[])
+{
+	B b;
+	b.show();
+	return 0;
+}",Error because of the conflicts between two show() function in class B,Program will compile successfully,Error due to self call in show() function,Error because show() function from class A is derived privately,Program will compile successfully,example,hard

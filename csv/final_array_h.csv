@@ -1,0 +1,387 @@
+"Choose one of the best option from the following Position number contained within a square brackets e.g. my_array [5], is referred as ____?
+", Sub-scripts,Post-scripts,Elements of an array,None of them,Sub-scripts,0,easy
+what is array,An array is a set of similar data items,An array is a set of distinct data items,An array can hold different types of datatypes, None of the above,An array is a set of similar data items,memorybased,medium
+" If we stored five elements or data items in an array, what will be the index address or the index number of the array's last data item?
+",3,5,4,88,4,understanding,easy
+ Which of the following is the correct syntax for declaring the array?, int array [];,int array [5];,Array[5];,None of them,int array [5];,memorybased,easy
+Which of the following is the correct syntax for printing the address of the first element?,int array[0],int array[1],int array[2],None of them,int array[0];,memorybased,easy
+Which of the following gives the 4th element of the array?,int array[0],int array [0];,int array[3];,None of them,int array [3];,memorybased,easy
+"What is the output of the given program?int array[] = {10, 20, 30}; cout << -2[array];  ",-15,-30,Compiler error,Garbage value,-30,memorybased,medium
+Which type of memory is used by an Array in C++ programming language?,Contiguous,Non-Contiguous,Both A and B,Not Mentioned,Contiguous,memorybased,medium
+ How many types of the array are there in the C++ programming language?,three types,four types,two types,Both A and B,two types,memorybased,medium
+"In C++, for what purpose the ""rank()"" is used?",It returns the size of each dimension,It returns the maximum number of elements that can be stored in the array,It returns the dimension of the specified array,None of them,It returns the dimension of the specified array,understanding,hard
+"Which one of the following is the correct definition of the ""is_array();"" function in C++?",It checks that the specified variable is of the array or not, It checks that the specified array of single dimension or not,It checks that the array specified of multi-dimension or not,Both B and C, It checks that the specified array of single dimension or not,memorybased,medium
+"Observer the given C++ program carefully and choose the correct output from the given options: cout<<is_array<int>::value; // case A    cout<<is_array<char[10]>::value; // case B cout<<is_array<string>::value;  // case c  
+",110,1,10,None of them,10,example,medium
+"Read the given C++ program carefully and choose the correct output from the given options: cout<<rank<int[10]>::value; // Case A    cout<<rank<char[10][10]>::value;   // Case B      cout<<rank<string[10][10][10]>::value; //Case C  
+",121,321,123,10,123,example,easy
+What did we call an array of the one-dimensional array?, Single Dimensional array, Multi-Dimensional array,2D Array (or 2-Dimensional array), Both A and B,2D Array (or 2-Dimensional array),memorybased,easy
+Which types of arrays are always considered as linear arrays?,Single-dimensional,Multi-dimensional,Both A and B,None of them,Single-dimensional,memorybased,easy
+Which of the following can be considered as the object of an array?,Index of an array,Elements of the Array,Functions of the Array, All of the above,Elements of the Array,memorybased,medium
+ How many types of elements can an array store?,Same types of elements,Char and int type,Only char types,All of the above,Same types of elements,memorybased,medium
+" Elements of a one-dimensional array are numbered as 0,1,2,3,4,5, and so on; these numbers are known as ____",Subscript of Array,Members of Array,Index values,Both A and C,Both A and C,fill ups,hard
+What is the correct definition of an array?,An array is a series of elements of the same type in contiguous memory ,An array is a series of element,An array is a series of elements of the same type placed in non-contiguous memory locations,An array is an element of the different type,An array is a series of elements of the same type in contiguous memory locations,memorybased,hard
+ A binary search algorithm is an algorithm that is used for,Divide and conquer method,Linear way to search values,Bubble sorting technique,None of them,Divide and conquer method,understanding,hard
+"In an array starting from the beginning and inspecting each element one after other for finding an object, until the object is found is called as",Linear search algorithm,Searching, Inspecting,all of them,Linear search algorithm,fill ups,hard
+"Consecutive group of memory locations contains all same name and same type, is called as",Structures,Arrays,Classes,Functions,Arrays,fill ups,hard
+For finding value in an array which of the following technique is used?, Binary search algorithm,Bubble Sort, Linear search algorithm, All of them, All of them,memorybased,medium
+"Choose one of the best option from the following Position number contained within a square brackets e.g. my_array [5], is referred as ____?",Sub-scripts,Post-scripts,Elements of an array,None of them,Sub-scripts,fill ups,medium
+when ______ array that are declared static are initialized,he first element is zero,Program is about to end,Program is loaded into the memory,None of them,Program is loaded into the memory,fill ups,easy
+Objects in an array is called as,Functions of an array,Elements of an array,Indexes of an array,all of them,Functions of an array,memorybased,easy
+ Which one of the following is a loop construct that will always be executed once?,for,while,switch,do while,do while,memorybased,easy
+Directives are translated by the, Pre-processor,complier,linker,editor, Pre-processor,understanding,medium
+How many bytes does “int=D” use?,0,1,2 or 4,10,2 or 4,understanding,medium
+Which of the following will copy the null-terminated string that is in array src into array dest?, dest = src;,dest == src;,"strcpy(dest, src);","strcpy(src, dest);","strcpy(dest, src);",understanding,medium
+What will the result of num variable after execution of the following statements?int num = 58;num % = 11;,3,5,8,11,3,example,medium
+What is the index of the first element in an array?,0,1,first,start,0,understanding,easy
+" In an array declaration int arr[5] = {1, 2, 3};, what will be the value of arr[3]?",1,2,3,0,0,understanding,hard
+ Which function is used to determine the length of an array?,sizeof(),length,sizee,new,sizeof(),understanding,easy
+ Which statement about arrays in C is false?,Arrays can store multiple values of different data types.,The size of an array must be specified at the time of declaration.,The elements of an array are stored in contiguous memory locations,he array index starts from 0.,Arrays can store multiple values of different data types.,memorybased,medium
+How would you declare a two-dimensional integer array of 3 rows and 4 columns?,"int arr[3, 4];",int arr[3][4],int[3][4] arr;," int arr[ ][ ] = {3, 4};",int arr[3][4];,understanding,hard
+"What will the value of arr[2] be in the following code segment?int arr[] = {10, 20, 30, 40, 50};",10,20,30,40,30,example,hard
+Which of the following is the correct syntax to send an array as a parameter to a C function?, Both func(&array) and func(*array);,Both func(#array) and func(&array);,Both func(array) and func(&array);,Both func(array[size]) and func(*array);,Both func(array) and func(&array);,memorybased,easy
+What are the different ways to initialize an array with all elements as zero?,int array[5] = {};, int array[5] = {0};,"int a = 0,  b = 0,  c = 0;   int array[5] = {a, b, c};",All of the mentioned,All of the mentioned,understanding,medium
+Which of the following declaration is illegal?,"int a = 0, b = 1, c = 2;   int array[3] = {a, b, c};",int size=3;int array[size];,"int size 3;int array[size]={1,2,3};", All of the mentioned,"int size 3;int array[size]={1,2,3};",understanding,hard
+An array of similar data types which themselves are a collection of dissimilar data type are ___________,linklist,trees,array of structure,All of the mentioned,array of structure,fill ups,medium
+Comment on an array of the void data type.,It can store any data-type, It only stores element of similar data type to first element, It acquires the data type with the highest precision in it,You cannot have an array of void data type,You cannot have an array of void data type,understanding,medium
+ An array in C cannot be initialized by which of the following statement?,char a[] = “Hello”;,char a[6] = {};, char a[6] = {0};,none of them,none of them,understanding,easy
+ What is the data type of the array passed from the command line into the main() function in C?,char arr[];,char *arr[];,char **arr[];,char arr[][],char *arr[];,memorybased,easy
+Comment on the following C statement.int (*a)[7];, An array “a” of pointers,A pointer “a” to an array,A ragged array,None of the mentioned, A pointer “a” to an array,example,hard
+" What will be the output of the following C code?#include <stdio.h>
+    void f(int a[][])
+    {
+        a[0][1] = 3;
+        int i = 0, j = 0;
+        for (i = 0;i < 2; i++)
+        for (j = 0;j < 3; j++)
+        printf(""%d"", a[i][j]);
+    }
+    void main()
+    {
+        int a[2][3] = {0};
+        f(a);
+    }",30000, Junk 3 junk junk junk junk,Compile time error,All junk values,Compile time error,example,hard
+"What will be the output of the following C code?    #include <stdio.h>
+    void main()
+    {
+        int a[2][3] = {1, 2, 3, 4, 5};
+        int i = 0, j = 0;
+        for (i = 0; i < 2; i++)
+        for (j = 0; j < 3; j++)
+        printf(""%d"", a[i][j]);
+    }",123450,12345 junk,123455,run time error,123450,example,hard
+" What will be output of the following C code where we copy an array ‘a’ into array ‘b’ and then the array ‘b’ into ‘a’?#include<stdio.h>
+#include<string.h>
+main()
+{
+  char a[] = ""hell"";
+  char b[] = ""hello"";
+ 
+  strcpy(b, a);
+  strcpy(a, b);
+  printf(""%s, %s"", a, b);
+}","hello, hello","hell,hell","hell,hello",run time error,"hell,hell",example,medium
+Which keyword is used to make the array size optional in C language during array declaration?,auto,static,extern,register,extern,memorybased,easy
+What is the correct syntax to send a 3-dimensional array as a parameter? (Assuming declaration int a[5][4][3];),func(a);,func(&a);,func(*a);,func(**a);,func(a);,understanding,easy
+ What are the applications of a multidimensional array?,Matrix-Multiplication, Minimum Spanning Tree,Finding connectivity between nodes,All of the mentioned,All of the mentioned,memorybased,medium
+"What will be the output of the following C code?#include <stdio.h>
+    void foo(int *ary[]);
+    int main()
+    {
+        int ary[2][3];
+        foo(ary);
+    }
+    void foo(int *ary[])
+    {
+        int i = 10, j = 2, k;
+        ary[0] = &i;
+        ary[1] = &j;
+        *ary[0] = 2;
+        for (k = 0;k < 2; k++)
+        printf(""%d\n"", *ary[k]);
+    }",22,complie time error,undefined behaviour,10 2,22,example,medium
+" What will be the output of the following C code?  #include <stdio.h>
+    void foo(int (*ary)[3]);
+    int main()
+    {
+        int ary[2][3];
+        foo(ary);
+    }
+    void foo(int (*ary)[3])
+    {
+        int i = 10, j = 2, k;
+        ary[0] = &i;
+        ary[1] = &j;
+        for (k = 0;k < 2; k++)
+        printf(""%d\n"", *ary[k]);
+    }",compile time error,10 2,undefined behaviour,segmentation fault,compile time error,example,medium
+" What will be the output of the following C code?#include <stdio.h>
+    int main()
+    {
+        foo(ary);
+    }
+    void foo(int **ary)
+    {
+        int i = 10, k = 20, j = 30;
+        int *ary[2];
+        ary[0] = &i;
+        ary[1] = &j;
+        printf(""%d\n"", ary[0][1]);
+    }",10,20,Compile time error,undefined behaviour,undefined behaviour,example,medium
+"What will be the output of the following C code? #include <stdio.h>
+    int main()
+    {
+        int ary[2][3][4], j = 20;
+        ary[0][0] = &j;
+        printf(""%d\n"", *ary[0][0]);
+    }",compile time error,20,address of j,undefined behaviour,Compile time error,example,medium
+"What will be the output of the following C code? #include <stdio.h>
+    int main()
+    {
+        int ary[2][3];
+        ary[][] = {{1, 2, 3}, {4, 5, 6}};
+        printf(""%d\n"", ary[1][0]);
+    }",compile time error,4,1,2,Compile time error,example,hard
+" What is the output of the given code?multi_d_array = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+print multi_d_array","[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]].","[0, 0, 0, 0].","[0, 0, 0, 0][0, 0, 0, 0].",None of the mentioned,"[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]].",example,medium
+"What is the output of the given code?array1 = [[1,2,3,4],[0,0,0,0]]
+array2 = [[1,2,3],[0,0,0,0]]
+if array1==array2
+    print ""Equal""
+else
+    print ""Not equal""
+end","[[1, 2, 3, 4], [0, 0, 0, 0]].",equal,not equal,none of them mentioned,not equal,example,hard
+"array1 = [[1,2,3,4],[0,0,0,0]]
+array2 = [[1,2,3,4],[0,0,0,0]]
+if array1==array2
+    print ""Equal""
+else
+    print ""Not equal""
+end","[[1, 2, 3, 4], [0, 0, 0, 0]].",equal,not equal,none of them,equal,example,hard
+"What is the output of the given code?array1 = [[1,2,3,4],[0,0,0,0]]
+array2 = [[1,2,3,4],[0,0,0,0]]
+print array1*array2","[[1, 2, 3, 4], [0, 0, 0, 0]].","[[1, 2, 3, 4], [0, 0, 0, 0], [1, 2, 3, 4], [0, 0, 0, 0]].",[],error,error,example,medium
+" What is the output of the given code?array1 = [[1,2,3,4],[0,0,0,0]]
+array2 = [[1,2,3],[0,0,0]]
+print array1 && array2","[[1, 2, 3], [0, 0, 0]]."," [[1, 2, 3, 4], [0, 0, 0, 0], [1, 2, 3, 4], [0, 0, 0, 0]].",[],error,"[[1, 2, 3], [0, 0, 0]].",example,hard
+"The correct syntax to access the member of the ith structure in the array of structures is?Assuming: struct temp
+    {
+        int b;
+    }s[50];", s.b.[i];,s.[i].b;, s.b[i];,s[i].b;,s[i].b;,memorybased,easy
+Which of the following uses structure?,Array of structures,link list,binary trees,All of the mentioned,All of the mentioned,memorybased,easy
+ What is the correct syntax to declare a function foo() which receives an array of structure in function?,void foo(struct *var);, void foo(struct *var[]);,void foo(struct var);,All of the mentioned,void foo(struct *var);,memorybased,easy
+" What will be the output of the following C code? (Assuming size of int be 4) #include <stdio.h>
+    struct temp
+    {
+        int a;
+        int b;
+        int c;
+    } p[] = {0};
+    main()
+    {
+        printf(""%d"", sizeof(p));
+    }",5,12,16,can't be determined,12,example,medium
+"What will be the output of the following C code? #include <stdio.h>
+    struct student
+    {
+        char *name;
+    };
+    void main()
+    {
+        struct student s[2], r[2];
+        s[1] = s[0] = ""alan"";
+        printf(""%s%s"", s[0].name, s[1].name);
+    }",alan alan,nothing,complie time error,varies,Compile time error,example,easy
+" What will be the output of the following C code? #include <stdio.h>
+    struct student
+    {
+    };
+    void main()
+    {
+        struct student s[2];
+        printf(""%d"", sizeof(s));
+    }",2,4,8,0,0,example,medium
+"What will be the output of the following C code? #include <stdio.h>
+    struct point
+    {
+        int x;
+        int y;
+    };
+    void foo(struct point*);
+    int main()
+    {
+        struct point p1[] = {1, 2, 3, 4};
+        foo(p1);
+    }
+    void foo(struct point p[])
+    {
+        printf(""%d\n"", p->x);
+    }",1,2,3,complie time error,1,example,medium
+" What will be the output of the following C code?#include <stdio.h>
+    struct point
+    {
+        int x;
+        int y;
+    };
+    void foo(struct point*);
+    int main()
+    {
+        struct point p1[] = {1, 2, 3, 4};
+        foo(p1);
+    }
+    void foo(struct point p[])
+    {
+        printf(""%d %d\n"", p->x, ++p->x);
+    }",1 2,2 2,complie time error,undefined behaviour,2 2,example,medium
+Which of the following is the correct syntax to declare a 3 dimensional array using pointers?,char *a[][];,char **a[];, char ***a;,All of the mentioned,char *a[][];,memorybased,medium
+An array of strings can be initialized by _________," char *a[] = {“Hello”, “World”};","char *a[] = {“Hello”, “Worlds”}","char *b = ""Hello"";char *c = ""World"";char *a[] = {b, c};",All of the mentioned,All of the mentioned,fill ups,medium
+"What will be the output of the following C code?#include <stdio.h>
+    void main()
+    {
+        char *a[10] = {""hi"", ""hello"", ""how""};
+        int i = 0;
+        for (i = 0;i < 10; i++)
+        printf(""%s"", *(a[i]));
+    }",segmentation fault,hi hello how followed by 7 null values,10 null values, depends on compiler,segmentation fault,example,medium
+"What will be the output of the following C code on a 32-bit system?#include <stdio.h>
+    void main()
+    {
+        char *a[10] = {""hi"", ""hello"", ""how""};
+        printf(""%d\n"", sizeof(a));
+    }",10,13,run time error,40,40,example,medium
+Which of the following are generated from char pointer?, char *string = “Hello.”;,"char *string;scanf(""%s"", string);",char string[] = “Hello.”;, char *string = “Hello.”; and char string[] = “Hello.”;, char *string = “Hello.”;,understanding,easy
+Which of the following declaration are illegal?,"int a[][] = {{1, 2, 3}, {2, 3, 4, 5}};",") int *a[] = {{1, 2, 3}, {2, 3, 4, 5}};","int a[4][4] = {{1, 2, 3}, {2, 3, 4, 5}};",none,"int a[][] = {{1, 2, 3}, {2, 3, 4, 5}};",understanding,easy
+In which way can SAM be stored in an array?,char name[]=”SAM”,") char name[6]={‘S’,’A’,’M’}","char name[6]={“S”,”A”,”M”}"," char name [6]={‘S’,’A’,’M’,’\0’}"," char name [6]={‘S’,’A’,’M’,’\0’}",understanding,easy
+ Int RollNUm[30[4] is a?,1-d array,3-d array,4-d array,2-d array,2-array,understanding,easy
+What is the max no. of dimensions an array may have?,2,8,20,no limit,no limit,understanding,medium
+ Array passed as an argument to a function is interpreted as ______________, Address of the array, None of the mentioned,Base address,No. of elements of the array,Base address,fill ups,medium
+Comment on the following statement: int (*a)[7];,An array “a” of pointers, A pointer “a” to an array,A ragged array,None of the mentioned, A pointer “a” to an array,understanding,medium
+what is the highest index for an array with 10 element in c,5,9,10,11,9,understanding,hard
+what is the size of an integer array declared as int arr[5] in bytes?,10,20,4,5,4,memorybased,medium
+how  do you access the first element of an array arr in c?,arr[1];,arr[0];,arr[2];,arr[3],arr[0];,memorybased,medium
+"In two-dimensional arrays, by default values are stored in",column major order,row major order,more than one of the above,none,row major order,memorybased,medium
+What will be the value of arr[1] after executing the following code?int arr[3];arr[1]=10;,0,10,garbage value,undefined behaviour,10,understanding,medium
+Which statement correctly finds the length of an array arr in C?,sizeof(arr) / sizeof(arr[0]),sizeof(arr) * sizeof(arr[0]),sizeof(arr[0]) / sizeof(arr),sizeof(arr),sizeof(arr) / sizeof(arr[0]),memorybased,medium
+What is the default value of an element in a static array in C?,1,0,undefined behaviour,None of the mentioned,0,memorybased,medium
+How are arrays passed to functions in C?,by value,by reference,by pointer,Both B and C,Both B and C,memorybased,medium
+Which function is used to dynamically allocate memory for an array in C,malloc(),calloc(),realloc(),All of the above,all of the above,memorybased,medium
+What is the correct syntax to declare a 2D array in C++?,int arr[2][2];,"nt arr{2,2};","int arr(2,2);","int arr[2,2];",int arr[2][2];,memorybased,medium
+Which of the following correctly declares a constant array in C++,const int arr[5];,int const arr[5];,"const int arr[] = {1, 2, 3};",All of the above,all of the above,memorybased,medium
+How do you pass a 2D array to a function in C?,"void function(int arr[][], int rows, int cols);","void function(int arr[rows][cols], int rows, int cols);","void function(int arr[][cols], int rows, int cols);","void function(int *arr, int rows, int cols);","void function(int arr[][cols], int rows, int cols);",memorybased,medium
+What is the correct way to return an array from a function in C++?,by using pointers,by using references,by returning a std::vector,All of the above,all of the above,understanding,medium
+How do you declare a pointer to an array of integers in C?,int *arr;,int arr*;,int (*arr)[10];,it *arr[10];,int (*ar)[10];,understanding,medium
+Which of the following is true about array indices in C/C++?,Array indices start at 1,Array indices can be negative,Array indices start at 0,Array indices can be floating-point values,Array indices start at 0,memorybased,medium
+"What will be the output of the following C++ code?#include <iostream>
+using namespace std;
+int main() {
+    int arr[4] = {10, 20, 30, 40};
+    for (int i = 0; i < 4; i++) {
+        cout << arr[i] << "" "";
+    }
+    return 0;
+}
+",10 20 30 40,10 10 10 10,30,102030,10 20 30 40,example,medium
+Which of the following statements about arrays in C is false?,Arrays can be passed to functions.,The name of an array acts as a pointer to the first element,The size of an array can be changed once it is created.,Arrays can store elements of the same data type.,The size of an array can be changed once it is created.,example,medium
+"What is the output of the following C code?int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+printf(""%d"", arr[2][1]);
+",2,5,8,9,8,example,medium
+Which of the following functions can be used to deallocate the memory allocated by malloc for an array in C?,delete,delete[],free,release,free,memorybased,medium
+Which of the following statements is true about a 2D array in C?,It can be treated as a 1D array.,Each element must be of a different data type.,The number of rows and columns must be equal.,It can only store integer values.,It can be treated as a 1D array.,memorybased,medium
+Which operator is used to access the elements of an array in C++?,.,->',[],*,[],memorybased,hard
+"What will be the output of the following C++ code?#include <iostream>
+using namespace std;
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int *p = arr + 3;
+    cout << *p;
+    return 0;
+}
+",1,2,3,4,4,example,hard
+What is the correct way to dynamically allocate a 1D array of 5 integers in C?,int arr[5];,int *arr = new int[5];,int *arr = (int*)malloc(5 * sizeof(int));,"int arr[] = {1, 2, 3, 4, 5};",int *arr = (int*)malloc(5 * sizeof(int));,understanding,hard
+"What will be the output of the following C++ code?#include <iostream>
+using namespace std;
+int main() {
+    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};
+    cout << *(*(arr + 1) + 2);
+    return 0;
+}
+",1,3,5,6,6,example,hard
+"Explain the concept of ""row-major order"" in multi-dimensional arrays.",Elements of each row are stored in contiguous memory locations.,Elements of each column are stored in contiguous memory locations.,Elements are stored diagonally in memory.,Elements are stored in random memory locations.,Elements of each row are stored in contiguous memory locations.,understanding,easy
+What happens if you do not initialize an array in C/C++?,The array elements are automatically set to zero.,The array elements contain random garbage values.,The array cannot be used until it is initialized.,the progra will throw an error,The array elements contain random garbage values.,understanding,hard
+how do you perform array slicing in C/C++?,Directly using array slicing syntax like Python,By creating a new array and copying elements,By using pointer arithmetic,Both b and c,Both b and c,understanding,hard
+What are the limitations of arrays in C/C++?,fixed size,No boundary checking,Lack of dynamic resizing capabilities,All of the above,All of the above,memorybased,easy
+What is the role of the null character in a character array?,To indicate the start of the string.,To separate different strings stored in the same array.,To mark the end of the string.,To indicate the memory location of the array.,To mark the end of the string.,memorybased,hard
+What is an array of pointers and how do you declare it in C?,An array where each element is a pointer to a specific data type. Example: int *arr[5],An array where each element is an integer pointer. Example: int arr[5];,An array where each element is a pointer to an array. Example: int arr[5][5];,An array where each element is a pointer to a function. Example: int (*arr[5])(int);,An array where each element is a pointer to a specific data type. Example: int *arr[5],memorybased,hard
+What is pointer arithmetic and how is it useful with arrays?,Operations on integers to manipulate pointer values,Operations on pointers to navigate through an array,Using pointers to add and multiply array elements,Using pointers to divide and subtract array elements,Operations on pointers to navigate through an array,memorybased,easy
+Explain the significance of the sizeof operator with arrays.,sizeof gives the number of elements in the array.,sizeof gives the size in bytes of each element in the array.,sizeof gives the total size in bytes of the array.,sizeof gives the memory address of the first element of the array.,sizeof gives the total size in bytes of the array.,memorybased,hard
+"What is meant by ""array index out of bounds""?",Accessing an array element using an invalid index,Deleting an array without freeing memory,Initializing an array with too many elements,Modifying the size of an array at runtime,Accessing an array element using an invalid index,memorybased,hard
+"What is the output of the following C code? c #include <stdio.h> int main() { int arr[4] = {1, 2, 3, 4}; printf(""%d"", arr[4]); return 0; } ",An array where each element is a pointer to an integer,0,Undefined behavior,Compilation error,Undefined behavior,example,hard
+What is an array of pointers in C?,Arrays can be resized dynamically without reallocation.,An array where each element is a pointer to a character,An array where each element is a pointer to another array,An array where each element is a pointer to a specific data type,An array where each element is a pointer to a specific data type,memorybased,easy
+Which statement about arrays in C/C++ is true?,Creates an array of 4 elements with all values initialized to 0,Arrays must have elements of the same data type.,Array size must be defined at runtime.,Arrays can store different data types in different indices.,Arrays must have elements of the same data type.,understanding,hard
+"What does int arr[4] = {1, 2, 3}; do in C?","Creates an array of 3 elements with values 1, 2, and 3","Creates an array of 4 elements with the first three values initialized to 1, 2, 3, and the last value to 0",both,Causes a compilation error because all elements are not initialized,"Creates an array of 4 elements with the first three values initialized to 1, 2, 3, and the last value to 0",understanding,hard
+Which of the following statements is true regarding multi-dimensional arrays in C?,Multi-dimensional arrays can only have two dimensions.,Elements of a multi-dimensional array are stored in column-major order.,Elements of a multi-dimensional array are stored in row-major order.,Multi-dimensional arrays must have the same number of elements in each dimension.,Elements of a multi-dimensional array are stored in row-major order.,understanding,easy
+What is a correct way to declare an array of strings in C?,char arr[3][10];,char *arr[3];,char arr[][];,Both a and b,Both a and b,memorybased,hard
+"What will be the output of the following C code? c #include <stdio.h> int main() { int arr[4] = {0}; printf(""%d"", arr[3]); return 0; }",0,1,Garbage value,complie time error,0,example,hard
+"What does the following C++ code do? cpp #include <iostream> using namespace std; int main() { int arr[3][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} }; int *ptr = &arr[0][0]; cout << *(ptr + 4); return 0; } ",prints 2,prints 3,prints 5,prints 6,prints 5,example,medium
+Which of the following is a correct way to dynamically allocate an array of 10 integers in C++?,int *arr = malloc(10 * sizeof(int));,int *arr = (int*)malloc(10 * sizeof(int));,int *arr = new int[10];,int arr[10];,int *arr = new int[10];,understanding,hard
+Which of the following statements is true about array bounds checking in C/C++?,The compiler automatically checks array bounds at runtime.,The compiler checks array bounds at compile time.,C/C++ does not perform array bounds checking.,Array bounds checking is only performed in debug mode.,C/C++ does not perform array bounds checking.,understanding,hard
+Which of the following correctly describes how multi-dimensional arrays are stored in memory in C?,In row-major order,in column major order,randomly,both a and b,In row-major order,memorybased,hard
+"What is the output of the following C code? c #include <stdio.h> void func(int arr[], int size) { arr[0] = 100; } int main() { int arr[5] = {1, 2, 3, 4, 5}; func(arr, 5); printf(""%d"", arr[0]); return 0; } ",100,5,complie time error,Array elements are stored in contiguous memory locations.,100,example,medium
+Which of the following statements about arrays in C/C++ is false?,An array index starts at 0.,The size of an array must be a constant expression.,Array elements are stored in contiguous memory locations.,An array can be dynamically resized.,An array can be dynamically resized.,understanding,hard
+"What is the correct syntax to initialize a character array with the string ""Hello"" in C++?",char arr[] = 'Hello';,"char arr[] = ""Hello"";","char arr[5] = ""Hello"";",char arr[6] = 'Hello';,"char arr[] = ""Hello"";",understanding,hard
+What is the correct syntax to access the last element of an array named arr in C/C++?,arr[-1],arr[arr.length - 1],arr[end],arr[arr.length],arr[arr.length - 1],understanding,hard
+Which of the following is a correct way to initialize a 2D array with all elements set to zero in C?,int arr[2][2] = {0};,"int arr[2][2] = {0, 0};","int arr[2][2] = {{0}, {0}};","int arr[2][2] = {{0, 0}, {0, 0}};","int arr[2][2] = {{0, 0}, {0, 0}};",understanding,medium
+"What is the output of the following C++ code? cpp #include <iostream> using namespace std; int main() { char arr[] = ""Hello""; cout << arr; return 0; } ","hello, hello",hello,h followed by garbage values,complie time error,hello,example,hard
+"What is the output of the following C code? c #include <stdio.h> int main() { int arr[] = {1, 2, 3}; printf(""%d"", arr[-1]); return 0; } ",0,1,2,Compilation error,0,example,hard
+"what will be the output of following c code ?#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    int *p = arr;
+    cout << *(p + 3);
+    return 0;
+}",1,2,3,4,4,example,easy
+Which of the following statements correctly initializes a two-dimensional array in C++?,"int arr[2][2] = {1, 2, 3, 4};","int arr[2][2] = {{1, 2}, {3, 4}};","int arr[2][2] = (1, 2, 3, 4);","int arr[2][2] = {{1, 2, 3, 4}};","int arr[2][2] = {{1, 2}, {3, 4}};",example,hard
+Which of the following statements about arrays in C++ is false?,The size of an array must be a constant expression.,Array elements are stored in contiguous memory locations.,The name of the array is a pointer to the first element.,Array bounds are checked at compile time.,Array bounds are checked at compile time.,fill ups,easy
+What happens if you access an array out of its bounds in C++?,A compile-time error is generated.,An exception is thrown.,The program may exhibit undefined behavior.,The out-of-bounds elements are initialized to zero.,The program may exhibit undefined behavior.,understanding,hard
+_____________about multidimensional arrays in C++?,They are stored in row-major order.,They are stored in column-major order.,They can have varying row lengths.,They cannot be passed to functions.,They are stored in row-major order.,fill ups,hard
+How can you determine the size of a statically allocated array in C++?,sizeof,length,size,capacity,sizeof,memorybased,medium
+Which of the following is true about the sizeof operator when applied to an array in C++?,It returns the number of elements in the array.,It returns the size of the array in bytes.,It returns the size of a single element of the array.,It returns the total memory allocated for the array.,It returns the size of the array in bytes.,understanding,hard
+What is the difference between int arr[] and int *arr when passed to a function?,"int arr[] passes the array by value, and int *arr passes the array by reference.","int arr[] passes the array by reference, and int *arr passes the array by value.",Both are equivalent and pass the array by reference.,Both are equivalent and pass the array by value.,Both are equivalent and pass the array by reference.,understanding,hard
+What will happen if you try to delete an array that was not allocated using new?,The array will be deleted successfully.,The program will crash.,The program may exhibit undefined behavior.,The array elements will be set to zero.,The program may exhibit undefined behavior.,understanding,medium
+Which of the following is the correct syntax to access the third element of an array arr?,arr[2],arr[3],Both A and C,arr[1],Both A and C,understanding,hard
+___________ about the memory allocation of arrays in C++?,Statically allocated arrays are allocated at runtime.,Dynamically allocated arrays are allocated at compile time.,Statically allocated arrays are allocated at compile time.,Both static and dynamic arrays are allocated at runtime.,Statically allocated arrays are allocated at compile time.,fill ups,hard
+What is the main difference between a static array and a dynamic array in C++?,"A static array is allocated on the stack, while a dynamic array is allocated on the heap.","A static array can change size during runtime, while a dynamic array cannot.","A static array requires a pointer, while a dynamic array does not.",There is no difference between static and dynamic arrays in C++.,"A static array is allocated on the stack, while a dynamic array is allocated on the heap.",memorybased,medium
+"Consider the following function declaration: void func(int arr[], int size);. Which of the following is true about this function?",The function will create a copy of the array and work on the copy.,The function will work on the original array passed to it.,The function cannot modify the original array passed to it.,The function can only access the first element of the array.,The function will work on the original array passed to it.,understanding,hard
+What is the primary benefit of using dynamic arrays over static arrays in C++?,Dynamic arrays allow for automatic resizing during runtime.,Dynamic arrays are faster to access than static arrays.,Dynamic arrays can be allocated with sizes unknown at compile time.,Dynamic arrays do not require manual memory management.,Dynamic arrays can be allocated with sizes unknown at compile time.,memorybased,hard
+_________is true about the sizeof operator when applied to arrays in C++?,It can only be used with statically allocated arrays.,It returns the number of elements in the array.,It returns the size of the array in bytes.,It returns the size of the first element in the array.,It returns the size of the array in bytes.,fill ups,hard
+What is the correct syntax to allocate a dynamic 2D array of integers with 3 rows and 4 columns in C++?,int **arr = new int[3][4];,int **arr = new int*[3]; for(int i = 0; i < 3; i++) arr[i] = new int[4];,int *arr=new int[3][4],int arr[3][4],int **arr = new int*[3]; for(int i = 0; i < 3; i++) arr[i] = new int[4];,memorybased,easy
+_______ is true about accessing array elements in C++?,The array index starts from 1.,Accessing an out-of-bounds array index will always throw an exception.,Array elements are stored in contiguous memory locations.,Arrays cannot be used with pointer arithmetic,Array elements are stored in contiguous memory locations.,fill ups,medium
+"what will be the output of #include <iostream>
+using namespace std;
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    int *p1 = arr;
+    int *p2 = arr + 4;
+    cout << *p1 + *p2;
+    return 0;
+}
+",5,6,7,8,6,example,medium
+"what will be the output of the following #include <iostream>
+using namespace std;
+
+void incrementArray(int *arr, int size) {
+    for (int i = 0; i < size; i++) {
+        arr[i]++;
+    }
+}
+
+int main() {
+    int arr[] = {5, 10, 15};
+    incrementArray(arr, 3);
+    cout << arr[1];
+    return 0;
+}
+",5,10,11,15,11,example,hard

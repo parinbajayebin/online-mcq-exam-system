@@ -1,0 +1,215 @@
+Who developed Python Programming Language?,Wick van Rossum,Rasmus Lerdorf,Guido van Rossum,Niene Stom,Guido van Rossum,memorybased,easy
+Which type of Programming does Python support?,object-oriented programming,Structured Programming,Functional Programming,All of the Above,All of the Above,memorybased,easy
+ Is Python case sensitive when dealing with identifiers?,yes,no,machine dependent,none of the above ,yes,understanding,easy
+ Which of the following is the correct extension of the Python file?,.python,.py,.pl,.p,.py,memorybased,easy
+Is Python code compiled or interpreted?,Python code is both compiled and interpreted,interpreted,complier,none,Python code is both compiled and interpreted,understanding,easy
+ All keywords in Python are in _________,Capitalized,lowercase,uppercase,none of the above ,none of the above,fillups,easy
+ What will be the value of the following Python expression?4 + 3 % 5,7,2,4,1,7,example,medium
+Which of the following is used to define a block of code in Python language?,Indentation,Key,Brackets,All of the Above,Indentation,memorybased,easy
+ Which keyword is used for function in Python language?,Function,Def,fun,define,Def,memorybased,easy
+Which of the following character is used to give single-line comments in Python?,//',#,!,/*',#,memorybased,medium
+"What will be the output of the following Python code?i = 1
+while True:
+    if i%3 == 0:
+        break
+    print(i)
+ 
+    i + = 1",1 2 3,error,1 2 ,none of the above ,error,example,medium
+Which of the following functions can help us to find the version of python that we are currently working on?, sys.version(1),sys.version(0),sys.version(),sys.version,sys.version,understanding,medium
+" Python supports the creation of anonymous functions at runtime, using a construct called __________",pi,anonymous,lambda,none of the above ,lambda,fillups,hard
+What is the order of precedence in python?,"Exponential, Parentheses, Multiplication, Division, Addition, Subtraction"," Exponential, Parentheses, Division, Multiplication, Addition, Subtraction","Parentheses, Exponential, Multiplication, Division, Subtraction, Addition"," Parentheses, Exponential, Multiplication, Division, Addition, Subtraction"," Parentheses, Exponential, Multiplication, Division, Addition, Subtraction",understanding,hard
+ What will be the output of the following Python code snippet if x=1? X<<2,4,2,1,8,4,example,medium
+What does pip stand for python?,Pip Installs Python,Pip Installs Packages,Preferred Installer Program,All of the Above,Preferred Installer Program,memorybased,medium
+ Which of the following is true for variable names in Python?,underscore and ampersand are the only two special characters allowed, unlimited length, all private members must have leading and trailing underscores,none of the above , unlimited length,understanding,medium
+" What are the values of the following Python expressions? 2**(3**2)
+ (2**3)**2
+ 2**3**2","5,12,64,512","51,25,12,512","64,512,64","64,64,64","5,12,64,512",example,hard
+ Which of the following is the truncation division operator in Python?,|,//',/',%,//',understanding,medium
+"What will be the output of the following Python code?l=[1, 0, 2, 0, 'hello', '', []]
+list(filter(bool, l))"," [1, 0, 2, ‘hello’, ”, []]",Error," [1, 2, ‘hello’]","[1, 0, 2, 0, ‘hello’, ”, []]"," [1, 2, ‘hello’]",example,easy
+Which of the following functions is a built-in function in python?,factorial(),print(),seed(),sqrt(),print(),memorybased,easy
+Which of the following is the use of id() function in python?,Every object doesn’t have a unique id,Id returns the identity of the object,all of the above,none of the above ,Id returns the identity of the object,understanding,medium
+" The following python program can work with ____ parameters.def f(x):
+    def f1(*args, **kwargs):
+           print(""Sanfoundry"")
+           return x(*args, **kwargs)
+    return f1",any number of,0,1,2,any number of,example,hard
+"What will be the output of the following Python function?min(max(False,-3,-4), 2,7)",-4,-3,2,FALSE,FALSE,example,easy
+ Which of the following is not a core data type in Python programming?,tuples,lists,class,dictionary,class,memorybased,easy
+"What will be the output of the following Python expression if x=56.236?print(""%.2f""%x)",56.236,56.23,56,56.24,56.24,example,medium
+Which of these is the definition for packages in Python?,a set of main modules,A folder of python modules,none,all of the above,A folder of python modules,memorybased,easy
+"What will be the output of the following Python function?len([""hello"",2, 4, 6])",error,6,4,3,4,example,easy
+" What will be the output of the following Python code?x = 'abcd'
+for i in x:
+    print(i.upper())",a B C D ,a b c d,error,A B C D,A B C D,example,easy
+What is the order of namespaces in which Python looks for an identifier?,"Python first searches the built-in namespace, then the global namespace and finally the local namespace"," Python first searches the built-in namespace, then the local namespace and finally the global namespace","Python first searches the local namespace, then the global namespace and finally the built-in namespace","Python first searches the global namespace, then the local namespace and finally the built-in namespace"," Python first searches the local namespace, then the global namespace and finally the built-in namespace",memorybased,medium
+"What will be the output of the following Python code snippet?for i in [1, 2, 3, 4][::-1]:
+    print(i, end=' ')",4 3 2 1 ,error,1  2 3 4 ,none of the above ,4 3 2 1,example,hard
+"What will be the output of the following Python statement?>>>""a""+""bc""",bc,abc,all of the above,bca,abc,example,hard
+"Which function is called when the following Python program is executed?f = foo()
+format(f)",str(),format(),__str__(),__format__(),__str__(),understanding,hard
+Which one of the following is not a keyword in Python language?,pass,eval,assert,nonlocal,eval,memorybased,easy
+"What will be the output of the following Python code?class tester:
+    def __init__(self, id):
+        self.id = str(id)
+        id=""224""
+ 
+>>>temp = tester(12)
+>>>print(temp.id)",12,224,none,error,12,example,medium
+"What will be the output of the following Python program?def foo(x):
+    x[0] = ['def']
+    x[1] = ['abc']
+    return id(x)
+q = ['abc', 'def']
+print(id(q) == foo(q))",error,none,FALSE,TRUE,TRUE,example,medium
+Which module in the python standard library parses options received from the command line?,getarg,getopt,main,os,getopt,understanding,hard
+"What will be the output of the following Python program?z=set('abc')
+z.add('san')
+z.update(set(['p', 'q']))
+z","{‘a’, ‘c’, ‘c’, ‘p’, ‘q’, ‘s’, ‘a’, ‘n’}"," {‘abc’, ‘p’, ‘q’, ‘san’}"," {‘a’, ‘b’, ‘c’, ‘p’, ‘q’, ‘san’}","{‘a’, ‘b’, ‘c’, [‘p’, ‘q’], ‘san}"," {‘a’, ‘b’, ‘c’, ‘p’, ‘q’, ‘san’}",example,hard
+What arithmetic operators cannot be used with strings in Python?,*,-',+',All of the Above,-',memorybased,easy
+" What will be the output of the following Python code?print(""abc. DEF"".capitalize())",Abc.def,abc.def,Abc.Def,ABC.DEF,Abc.def,example,easy
+Which of the following statements is used to create an empty set in Python?,(),[],{},set(),set(),understanding,easy
+"What will be the value of ‘result’ in following Python program?list1 = [1,2,3,4]
+list2 = [2,4,5,6]
+list3 = [2,6,7,8]
+result = list()
+result.extend(i for i in list1 if i not in (list2+list3) and i not in result)
+result.extend(i for i in list2 if i not in (list1+list3) and i not in result)
+result.extend(i for i in list3 if i not in (list1+list2) and i not in result)","[1,3,5,7,8]","[1,7,8]","[1,2,4,7,8]",error,"[1,3,5,7,8]",example,hard
+ To add a new element to a list we use which Python command?, list1.addEnd(5),list1.addLast(5),list1.append(5),list1.add(5),list1.append(5),understanding,medium
+"What will be the output of the following Python code?print('*', ""abcde"".center(6), '*', sep='')",*  abcde *,*abcde*,*abcde  *,* abcde *,*abcde*,example,medium
+"What will be the output of the following Python code?>>>list1 = [1, 3]
+>>>list2 = list1
+>>>list1[0] = 4
+>>>print(list2)","[1, 4]","[1,3,4]","[4,3]","[1,3]","[4,3]",example,hard
+ Which one of the following is the use of function in python?,Functions don’t provide better modularity for your application, you can’t also create your own functions, Functions are reusable pieces of programs,All of the Above, Functions are reusable pieces of programs,understanding,easy
+" Functions are reusable pieces of programsA = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]",A[2][1], A[1][2],A[3][2],A[2][3], A[1][2],example,easy
+What is the maximum possible length of an identifier in Python?,79characters,31 characters,63 characters,none of the above ,none of the above,memorybased,medium
+"What will be the output of the following Python program?i = 0
+while i < 5:
+    print(i)
+    i += 1
+    if i == 3:
+        break
+else:
+    print(0)",error,0 1 2 0,0 1 2,none of the above ,0 1 2,example,easy
+"What will be the output of the following Python code?x = 'abcd'
+for i in range(len(x)):
+    print(i)",error,1 2 3 4 ,a b c d, 0 1 2 3 ,0 1 2 3,example,medium
+ What are the two main types of functions in Python?,System function,custom function,Built-in function & User defined function,user function,Built-in function & User defined function,memorybased,medium
+"What will be the output of the following Python program?def addItem(listParam):
+    listParam += [1]
+ 
+mylist = [1, 2, 3, 4]
+addItem(mylist)
+print(len(mylist))",5,8,2,1,5,example,hard
+Which of the following is a Python tuple?,"{1,2,3}",{},"[1,2,3]","(1,2,3)","(1,2,3)",understanding,easy
+" What will be the output of the following Python code snippet?z=set('abc$de')
+'a' in z",error,TRUE,FALSE,no output,TRUE,example,easy
+What will be the output of the following Python expression?round(4.576),4,4.6,5,4.5,5,understanding,easy
+Which of the following is a feature of Python DocString?,In Python all functions should have a docstring,Docstrings can be accessed by the __doc__ attribute on objects,"It provides a convenient way of associating documentation with Python modules, functions, classes, and methods",All of the Above,All of the Above,memorybased,medium
+"What will be the output of the following Python code?print(""Hello {0[0]} and {0[1]}"".format(('foo', 'bin')))"," Hello (‘foo’, ‘bin’) and (‘foo’, ‘bin’)",error, Hello foo and bin,none of the above , Hello foo and bin,example,medium
+"What is output of print(math.pow(3, 2))?",9,none,9,none of the above ,9,understanding,easy
+Which of the following is the use of id() function in python?,Every object in Python doesn’t have a unique id,In Python Id function returns the identity of the object,none of the above,All of the Above,In Python Id function returns the identity of the object,understanding,hard
+" What will be the output of the following Python code?x = [[0], [1]]
+print((' '.join(list(map(str, x))),))",1,[0] [1],('01'),0,"('[0][1]',)",example,hard
+The process of pickling in Python includes ____________,conversion of a Python object hierarchy into byte stream,conversion of a datatable into a list, conversion of a byte stream into Python object hierarchy,conversion of a list into a datatable,conversion of a Python object hierarchy into byte stream,fillups,medium
+" What will be the output of the following Python code?def foo():
+    try:
+        return 1
+    finally:
+        return 2
+k = foo()
+print(k)",error,3,2,1,2,example,easy
+Which of the following represents the bitwise XOR operator?,&,^,|,!,^,memorybased,easy
+What is the value of the following Python expression?bin(0x8),0bx1000’,8,1000,‘0b1000,‘0b1000,example,hard
+What will be the output of the following Python expression?0x35 | 0x75,115,116,117,118,117,understanding,medium
+To concatenate two strings to a third what statements are applicable?,s3 = s1 . s2,s3 = s1 * s2,s3 = s1.__add__(s2), s3 = s1.add(s2),s3 = s1.__add__(s2),understanding,easy
+"What is “Hello”.replace(“l”, “e”)?",heeeo,heelo,heleo,none of the above ,heeeo,understanding,medium
+To retrieve the character at index 3 from string s=”Hello” what command do we execute (multiple answers allowed)?,s[],s.getitem(3),s.__getitem__(3),s.getItem(3),s.__getitem__(3),understanding,hard
+To return the length of string s what command do we execute?,len(s) OR s.__len__(),len(s) only,size(s),s.size(),len(s) OR s.__len__(),memorybased,easy
+" If a class defines the __str__(self) method, for an object obj for the class, you can use which command to invoke the __str__ method.",print obj,obj.__str__(),str(obj),All of the Above,All of the Above,memorybased,medium
+" To check whether string s1 contains another string s2, use ________", s1.__contains__(s2),s2 in s1,s1.contains(2),si.in(s2), s1.__contains__(s2),fillups,medium
+" Suppose i is 5 and j is 4, i + j is same as ________",i.__add(j),i.__add__(j),i.__ADD(j),i.__Add(j),i.__add__(j),fillups,hard
+What function do you use to read a string?,input(“Enter a string”),"eval(""enter a string"")","enter(""enter a string"")","eval(enter(""Enter a string "")",input(“Enter a string”),memorybased,easy
+"Suppose x is 345.3546, what is format(x, “10.3f”) (_ indicates space).", __345.355, ___345.355, ____345.355, _____345.354, ___345.355,understanding,hard
+Python is known as:,A compiled language,An interpreted language,a machine language,An assembly language,An interpreted language,memorybased,easy
+Python is a:,low-level language,high-level language,middle-level language,machine-leve language,high-level language,memorybased,easy
+Which of the following is a mutable data type in Python?,string,tuple,list,integer,list,memorybased,medium
+What data type would you use to store a whole number in Python?,int,float,str,bool,int,understanding,easy
+Which of the following is not a Python built-in data type?,dict,array,set,frozenset,array,memorybased,easy
+Which of the following is an immutable data type?,lists,dictionaries,tuples,sets,tuples,understanding,easy
+"What does the following code output:x = [1, 2, 3];
+print(type(x) == list)",TRUE,FALSE,error,none of the above ,TRUE,example,medium
+Which function in Python is used to display data as output?,display(),print(),show(),output(),print(),memorybased,easy
+What is the purpose of the end parameter in the print() function?,To add a space at the end,To end the script,To specify the string appended after the last value,To break the line,To specify the string appended after the last value,understanding,easy
+Which of the following is a valid Python variable name?,2var,_myvar,my_var,my var,_myvar,memorybased,medium
+"What would be printed? x = [[1, 2], [3, 4], [5, 6]] x = [x for x in x for x in x] print x"," [[1, 2], [1, 2], [1, 2]]",Compilation error,"[1, 2, 3, 4, 5, 6]","[6, 6, 6, 6, 6, 6]"," [1, 2, 3, 4, 5, 6]",understanding,easy
+from  which module can a user import classes and methods to work with regular expressions?,SYS,re,regularexpressions,regexp,re,memorybased,medium
+What is the exponentiation (power) operator?,**,^,both are correct,none are correct,**,memorybased,easy
+What is the difference between using single quotes and double quotes in Python strings?, Single quotes are for short strings. Double quotes are for long strings.,There is no difference., Double quotes are for constants. Single quotes are for variables., In Python you can use only single quotes.,There is no difference.,understanding,medium
+ What will typing the following at the Python interpreter produce? [3]*3,9,[9],333,"[3,3,3]","[3,3,3]",understanding,medium
+ Functions are first-class objects in Python.,always,never,notin,none,always,memorybased,medium
+What is the index of the first item in a tuple or list?,0,-1,1,-21587868,0,memorybased,easy
+" If you want a function you define to return ""a"", what should be put on the last line of the function (correctly indented)?",a,ret(a),return a,a,return a,memorybased,hard
+ Python holds the current working directory in memory.,TRUE,FALSE,may be,may not be,TRUE,understanding,medium
+ python you can run linux command,FALSE,TRUE,may be,may not be,TRUE,understanding,hard
+What keyword is needed to use an external module?,use,package,external,import,import,memorybased,easy
+What does the sys module include?,The name of the operating system where your Python code is run.,The largest integer the machine's architecture supports.,The Python interpreter's version number.,All of the Above,All of the Above,understanding,medium
+What is the maximum recursion limit in Python?, It's configurable.,100000,100,10000000, It's configurable.,understanding,hard
+What will be the value of a variable x after executing the expression x = y = 1?,This expression will result in a syntax error.,undefined,0,1,1,example,hard
+"Which of the following data structures supports the 'in' operator: list, dictionary, set ?",set,list,dictionary,all three,all three,understanding,hard
+"When opening the Python shell, the prompt you see is",>,#,$,>>>,>>>,understanding,hard
+ What kind of type system does Python have?,dynamic,inverse,loading,proportional,dynamic,understanding,easy
+Is it possible to call a function from within another function?,yes,no," Yes, but only when the program runs on a remote server","  Yes, but only in the interactive shell.",yes,understanding,medium
+"What data type is the following: [1, 2, 3] ?",counter,list,dictionary,tuple,list,understanding,easy
+"What function do you use to determine the size of a tuple, a list, or a string?",length,size,tuplen for tuples,len,len,memorybased,easy
+What is a string delimited by?,"""","""""""""","""""",All of the Above,All of the Above,memorybased,easy
+Which of these will result in an error?,"""hello""*2","""hello""**2","len(""hello"")","""hello""+""hell""","""hello""**2",understanding,medium
+What is a variable?,  A statement which allows you to choose one variant from a given set,"A collection of elements, each identified by an index",An object which may contain some data,An object containing data whose value cannot be altered by the program,An object which may contain some data,memorybased,medium
+ How are non-anonymous Python functions declared?,There is no way to pass parameters to a class instance," With the ""def"" keyword.",With function prototypes declared in header files.,"With ""do function ... done""."," With the ""def"" keyword.",understanding,medium
+" When defining a class, what controls which parameters that may be passed when the class is instantiated?",referenece parameters,Specifying those parameters after the class name.,Specifying those parameters in the definition of an __init__ method of the class.,Writing the desired values after the class name when the class instance is created.,Specifying those parameters in the definition of an __init__ method of the class.,understanding,hard
+What is the del statement used for?, To remove a function from a list given its name.,To remove an item To remove an item from a list given its index.from a list given its index.,To delete a file from the file system given its path., To delete a user if you are a privileged user., To remove an item from a list given its index.,understanding,medium
+What is the maximum possible length of an identifier?,16,32,64,none of the above ,none of the above,understanding,easy
+Which of the following statements is correct regarding the object-oriented programming concept in python, Classes are real-world entities while objects are not real, Objects are real-world entities while classes are not real,both a nd b,All of the Above, Objects are real-world entities while classes are not real,memorybased,hard
+Which of the following declarations is incorrect?,_x=2,__x=3,_xyz__=5,none of the above ,none of the above,understanding,hard
+Which of the following statements is correct for variable names in Python language?, All variable names must begin with an underscore.,Unlimited length, The variable name length is a maximum of 2.,All of the Above,Unlimited length,memorybased,hard
+Which one of the following has the same precedence level?,"Division, Power, Multiplication, Addition and Subtraction", Division and Multiplication,substraction and division,power and division, Division and Multiplication,understanding,hard
+"Which of the following is correctly evaluated for this function?pow(x,y,z)", (x / y) / z,(x**y) / z, (x / y) * z, (x**y) % z, (x**y) % z,understanding,hard
+Which one of the following syntaxes is the correct syntax to read from a simple text file stored in”d:\java.txt”?,"Infile = open(”d:\\java.txt”, ”r”)"," Infile = open(file=”d:\\\java.txt”, ”r”)","Infile = open(”d:\java.txt”,”r”)","Infile = open.file(”d:\\java.txt”,”r”)","Infile = open(”d:\\java.txt”, ”r”)",memorybased,hard
+"Study the following function:any([5>8, 6>3, 3>1])What will be the output of this code?",TRUE,FALSE,invalid code,none of the above ,TRUE,understanding,hard
+Which of the following option is not a core data type in the python language?,dictionary,lists,class,All of the Above,class,memorybased,medium
+What error will occur when you execute the following code?MANGO = APPLE,nameerror,syntaxerror,typeerror,valueerror,nameerror,understanding,medium
+What happens when ‘2’ == 2 is executed?,FALSE,TRUE,valueerror,typeerror,FALSE,understanding,medium
+Correct syntax of the reshape() function in Numpy array python is –,array.reshape(shape),"reshape(shape,array)","reshape(array,shape)",reshape(shape),"reshape(array,shape)",fillups,medium
+How we can convert the Numpy array to the list in python?,list(array),list.array,array.list,none of the above ,list(array),memorybased,medium
+How we can find the type of numpy array in python ?,dtype,type,typei,itype,dtype,understanding,medium
+Python pandas was developed by?,Guido van Rossum,Travis Oliphant,Wes McKinney,Brendan Eich,Wes McKinney,memorybased,medium
+Popular external libraries in Python include ______.,Numpy,Pandas,Matplotib,All of the Above,All of the Above,fillups,medium
+ Who specializes in Python programming is called ______.,pythonic,pythian,pythaniasts,no specialized name is determined,pythaniasts,fillups,easy
+ The main purpose of Python programming is to,Organize code into manageable units and promote code reuse,execute block of code consistenly,determine conditional statements,to execute mathematical operations,Organize code into manageable units and promote code reuse,memorybased,medium
+Python does not natively support ______ data type.,dictionary,lists,tuples,arrays,arrays,fillups,medium
+ ________ is not a keyword used in the Python programming language.,pass,eval,assert,nonlocal,eval,fillups,easy
+What will be the output of bool(‘False’)?,TRUE,FALSE,error,none of the above ,TRUE,understanding,easy
+ ________ data type will be used to store a whole number in Python programming.,int,bool,str,float,int,fillups,easy
+The items() method of the dictionary returns ________.,lists of tuples,lists of obj,repetition of values,lists of lists,lists of tuples,fillups,hard
+What does the range() function in Python return?,A list of numbers,a tuple of a number, A sequence of numbers,A dictionary of numbers, A sequence of numbers,understanding,hard
+What does the strip() method do in Python?, Removes all leading and trailing spaces from a string, Splits a string into a list of substrings,Joins multiple strings into one, Replaces occurrences of a substring within a string, Removes all leading and trailing spaces from a string,understanding,medium
+What will be the output of the following code snippet?print(3 * 'abc'),abcabcabcabc,abcabc,abcabcabc,error,abcabcabc,example,easy
+Which of the following is used to open a file in Python for reading and writing?,r+,rw,a+,both a and c,both a and c,memorybased,easy
+What does the __init__ method do in Python?, It initializes all the variables in a class.,It is a constructor method that is automatically called, It is used to delete an instance of a class.,It is a reserved keyword and cannot be used as a method name.,It is a constructor method that is automatically called,understanding,medium
+ What does the append() method do when used with lists in Python?,Adds an element to the end of the list,Removes the last element of the list, Sorts the elements of the list, Reverses the order of elements in the list,Adds an element to the end of the list,understanding,easy
+ Which of the following is the correct way to define a function in Python?,def function_name:, function function_name():,define function_name():,def function_name():,def function_name():,memorybased,easy
+ Which of the following is not a valid comparison operator in Python?,<=,=>',==',!=','=>',memorybased,easy
+What is the output of 10 / 3 in Python?,3.3333,3,3,4,3.3333,example,easy
+"Find the mistake:x = (1, 2, 3);x[1] = 4;print(x)",Tuples are immutable,x[1] should be x[2],syntax error,no error,Tuples are immutable,example,medium
+Which function in Python is used to display data as output?,display(),print(),show(),output(),print(),memorybased,easy
+"In Python, which keyword is used to check additional conditions if the previous conditions fail?",elif,else if,then,switch,elif,understanding,easy
+What is the use of a for loop in Python?,To repeat a block a fixed number of times,To check a condition,To declare variables,To handle exceptions,To repeat a block a fixed number of times,memorybased,medium
+What is the difference between a for loop and a while loop in Python?,for is used for fixed iterations,while is faster than for,for can't use conditional statements,there is no difference,for is used for fixed iterations,understanding,medium
+What is the output of the following code?for i in range(3):print(i),"""0 1 2""",1 2 3,0 1 2 3 ,error,"""0 1 2""",example,medium
+What is the main difference between a list and a tuple in Python?,syntax,data type,mutability,method of declaration,mutability,memorybased,medium
+How do you access the last element of a list named myList?,mylist[0],mylist[-1],mylist[len(mylist)],mylist[-2],mylist[-1],understanding,hard

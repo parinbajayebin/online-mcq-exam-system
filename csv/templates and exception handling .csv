@@ -1,0 +1,764 @@
+Which value is placed in the base class?,Derived values,Default type values,Both default type & derived values,None of the above,None of the above,understanding,medium
+ What is a template?, A template is a formula for creating a generic class,A template is used to manipulate the class,A template is used for creating the attributes,None of the above, A template is a formula for creating a generic class,memory,easy
+Which of the following best defines the syntax for template function ?,template return_type Function_Name(Parameters), return_type Function_Name(Parameters),Both A and B,None of the above,template return_type Function_Name(Parameters),memory,hard
+"Templates are abstract recipe for producing a concrete code, and it is used for",Producing functions,Producing classes,Nothing,Both A and B,Both A and B,understanding,medium
+How many parameters are legal for non-type template?,1,2,3,4,4,memory,hard
+How many kinds of entities are directly parameterized in c++?,1,2,3,4,3,memory,medium
+From where does the template class derived?,Regular non-templated C++ class,Templated class,Both A or B,None of the above,Both A or B,understanding,hard
+Can we have overloading of the function templates?,Yes,No,Maybe,Can't Say,Yes,understanding,easy
+A container class is a class whose instances are,Containers, Functions,Strings,None of the above,Containers,memory,easy
+Which of the things does not require instantiation?,Functions,Non virtual member function,Member class,All of the above,All of the above,understanding,medium
+"What is the output of this program?
+
+#include <iostream>
+
+using namespace std;
+template <typename T>
+T max (T& p, T& q) 
+    {
+        return (p>q?p:q);
+    }
+int main () 
+{
+ 	int x = 55, y = 60, m;
+	long a = 105, b = 53, n;
+	m = max(x, y);
+	n = max(a, b);
+	cout << m << endl;
+	cout << n << endl;
+	return 0;
+}",60,60 105, 50 105,60 53,60 105,example,hard
+"What is the output of this program?
+
+#include <iostream>
+
+using namespace std;
+template <typename T>
+void loopIt(T x)
+{   int num=3;
+	T lfc[num];
+	for(int p = 0; p < num; p++)
+	{
+		lfc[p] = x++;
+        cout <<  lfc[p] << endl;
+    }
+};
+
+int main()
+{
+	float q = 2.1;
+	loopIt(q);
+} ",2.1,3.1,4.1,2.1 3.1 4.1,2.1 3.1 4.1,example,medium
+"What is the output of this program?
+
+#include <iostream>
+
+using namespace std;
+template <typename T>
+T maximum(T x, T y)
+{
+    return (x > y)? x : y;
+}
+int main()
+{
+    cout << maximum(3, 7) << std::endl;
+    cout << maximum(3.0, 7.0) << std::endl;
+    cout << maximum(3, 7.0) << std::endl;
+    return 0;
+}",Compiler Error in last cout statement as call to maximum is ambiguous,Compiler Error in all cout statements as data type is not specified,7 7.0 7.0,None of the above,Compiler Error in last cout statement as call to maximum is ambiguous,example,easy
+"Which of the following statement is correct about the program given below?
+
+#include <iostream>
+
+using namespace std;
+template <class T, class U>
+class A  {
+    T x;
+    U y;
+    static int count;
+};
+ 
+int main()  {
+   A<char, char> p;
+   A<int, int> q;
+   cout << sizeof(p) << endl;
+   cout << sizeof(q) << endl;
+   return 0;
+}",Compiler Error: There can not be more than one template arguments.,6 12,8 8, 2 8, 2 8,example,easy
+How many bits of memory needed for internal representation of class?,1,2,4,No memory needed,4,memory,hard
+What can be passed by non-type template parameters during compile time?,Int,Float,Constant expression,None of the above,Constant expression,memory,medium
+"Containers have the same types, that's why they are called",Heterogeneous,Homogeneous,Vectors,None of them,Homogeneous,understanding,easy
+Pick out the correct statement about string template?,It is used to replace a string., It is used to replace a string with another string at runtime.,It is used to delete a string.,None of the above, It is used to replace a string with another string at runtime.,understanding,medium
+Which is dependant on template parameter?,Base class,Abstract class,Method,None of the above,Base class,understanding,easy
+How many types of templates are there in c++?,1,2,3,4,2,memory,easy
+A common activity performed on a container is called,Functioning,Iterator,Traversal,All of the above,Traversal,understanding,hard
+What is other name of full specialization?,Explicit specialization,Implicit specialization,Function overloading template,None of the above,Explicit specialization,memory,hard
+"What will be the output of the following program?
+
+         
+Note:Includes all required header files
+
+using namespace std;
+template < typename T >
+void print_mydata(T find)
+{
+	cout << find << endl;
+}
+
+int main()
+{
+	double p = 17.5;
+	string s(""Hi to all"");
+	print_mydata( p );
+	print_mydata( s );
+	return 0;
+}  ",17.5 Hi to all,17.5,Hi to all,All of the above,17.5 Hi to all,example,easy
+"What will be the output of this program?
+
+#include <iostream>
+using namespace std;
+ 
+template <int i>
+void fun()
+{
+   i = 20;
+   cout << i;
+}
+ 
+int main()
+{
+   fun<10>();
+   return 0;
+}
+
+",A. Compile Error,10,20,15,A. Compile Error,example,easy
+"What will be the output of this program?
+
+#include <iostream>
+using namespace std;
+  
+template<int n> struct funStruct
+{
+    static const int val = 2*funStruct<n-1>::val;
+};
+  
+template<> struct funStruct<0>
+{
+    static const int val = 1 ;
+};
+  
+int main()
+{
+    cout << funStruct<10>::val << endl;
+    return 0;
+}",Compiler Error,1,2,1024,1024,example,medium
+Which of the following is incorrect in C++ ? (1)When we write overloaded function we must code the function for each usage. (2)When we write function template we code the function only once. (3)It is difficult to debug macros (4)Templates are more efficient than macros,(1) and (2),"(1), (2) and (3)",(3) and (4),All are correct.,All are correct.,understanding,hard
+Which of the following provides the best description of an entity type?,A specific concrete object with a defined set of processes (e.g. Jatin with diabetes),A value given to a particular attribute (e.g. height - 230 cm),"A thing that we wish to collect data about zero or more, possibly real world examples of it may exist",A template for a group of things with the same set of characteristics that may exist in the real world,A template for a group of things with the same set of characteristics that may exist in the real world,memory,hard
+What is the difference between delete and delete[] in C++?,delete is syntactically correct but delete[] is wrong and hence will give an error if used in any case, delete is used to delete normal objects whereas delete[] is used to pointer objects,delete is a keyword whereas delete[] is an identifier, delete is used to delete single object whereas delete[] is used to multiple(array/pointer of) objects, delete is used to delete single object whereas delete[] is used to multiple(array/pointer of) objects,memory,hard
+"Which of the following is true about templates.
+1) Template is a feature of C++ that allows us to write one code for different data types.
+
+2) We can write one function that can be used for all data types including user defined types. Like sort(), max(), min(), ..etc.
+
+3) We can write one class or struct that can be used for all data types including user defined types. Like Linked List, Stack, Queue ..etc.
+
+4) Template is an example of compile time polymorphism.",1 and 2,"1, 2 and 3","1, 2 and 4","1, 2, 3 and 4","1, 2, 3 and 4",understanding,medium
+"Predict the output?
+
+#include <iostream>
+using namespace std;
+
+template <typename T>
+void fun(const T&x)
+{
+    static int count = 0;
+    cout << \""x = \"" << x << \"" count = \"" << count << endl;
+    ++count;
+    return;
+}
+
+int main()
+{
+    fun<int> (1); 
+    cout << endl;
+    fun<int>(1); 
+    cout << endl;
+    fun<double>(1.1);
+    cout << endl;
+    return 0;
+}","x = 1 count = 0
+
+x = 1 count = 1
+
+x = 1.1 count = 0","x = 1 count = 0
+
+x = 1 count = 0
+
+x = 1.1 count = 0","x = 1 count = 0
+
+x = 1 count = 1
+
+x = 1.1 count = 2",Compiler Error,"x = 1 count = 0
+
+x = 1 count = 1
+
+x = 1.1 count = 0",example,easy
+"Output of following program?
+
+#include <iostream>
+using namespace std;
+
+template <class T>
+class Test
+{
+private:
+    T val;
+public:
+    static int count;
+    Test()  {   count++;   }
+};
+
+template<class T>
+int Test<T>::count = 0;
+
+int main()
+{
+    Test<int> a;
+    Test<int> b;
+    Test<double> c;
+    cout << Test<int>::count   << endl;
+    cout << Test<double>::count << endl;
+    return 0;
+}","0,0","1,1","2,1","1,0","2,1",example,medium
+What are Templates in C++?, A feature that allows the programmer to write generic programs,A feature that allows the programmer to write specific codes for a problem,A feature that allows the programmer to make program modular,A feature that does not add any power to the language, A feature that allows the programmer to write generic programs,understanding,easy
+In how many ways templates concept can be used?,1,2,3,4,2,memory,easy
+What is the difference between normal function and template function?,The normal function works with any data types whereas template function works with specific types only,Template function works with any data types whereas normal function works with specific types only,"Unlike a normal function, the template function accepts a single parameter","Unlike the template function, the normal function accepts more than one parameters",Template function works with any data types whereas normal function works with specific types only,understanding,medium
+Templates simulate which of the following feature?,Polymorphism,Abstraction,Encapsulation, Inheritance,Polymorphism,memory,easy
+Which keyword is used for the template?,Template,template,Temp, temp,template,memory,easy
+What is the correct syntax of defining function template/template functions?, template <class T> void(T a){cout<<a;},Template <class T> void(T a){cout<<a;}, template <T> void(T a){cout<<a;},Template <T> void(T a){cout<<a;}, template <class T> void(T a){cout<<a;},memory,hard
+"By default, all the files in C++ are opened in _________ mode.",Binary, VTC,Text,ISCII,Text,memory,medium
+"What does this template function indicates?
+
+==================
+template<class T, class U>
+U func(T a, U b)
+{
+	cout<<a<<""\t""<<b;
+}
+==================",A function taking a single generic parameter and returning a generic type which may be different from argument type,A function taking a single generic parameter and returning a generic type which must be different from argument type,A function taking a single generic parameter and returning a generic type which must have the same type as argument type,A function taking a single generic parameter and returning a specific non-void type,A function taking a single generic parameter and returning a generic type which may be different from argument type,understanding,medium
+"What does this template function indicates?
+
+==================
+template<class T>
+void func(T a)
+{
+	cout<<a;
+}
+==================", A function taking a single generic parameter and returning a generic type,A function taking a single generic parameter and returning nothing,A function taking single int parameter and returning a generic type,A function taking a single generic parameter and returning a specific non-void type, A function taking a single generic parameter and returning nothing,example,easy
+"What does this template function indicates?
+
+==================
+template<class T>
+T func(T a)
+{
+	cout<<a;
+}
+==================",A function taking a single generic parameter and returning a generic type,A function taking a single generic parameter and returning nothing,A function taking single int parameter and returning a generic type,A function taking a single generic parameter and returning a specific non-void type,A function taking a single generic parameter and returning a generic type,example,hard
+"Write a template function which takes two numbers, can be integers/real, and an operator as a character ‘+’/’-‘ or as boolean values true/false(representing ‘+’/’-‘ respectively) and returns the results accordingly.","template<class T, class U>
+T func(T a, T b, U c)
+{
+ 
+	if(c == '+' || c){
+		return a+b;
+	}
+	else if(c == '-' || !c){
+		return a-b;
+	}
+}","template<class T>
+T func(T a, T b, T c)
+{
+	if(c == '+' || c){
+		return a+b;
+	}
+	else if(c == '-' || !c){
+		return a-b;
+	}
+}","template<class T, class U>
+U func(T a, T b, U c)
+{
+	if(c == '+' || !c){
+		return a+b;
+	}
+	else if(c == '-' || c){
+		return a-b;
+	}
+}","template<class T, class U>
+U func(T a, T b, U c)
+{
+	if(c == '+' || c){
+		return a+b;
+	}
+	else if(c == '-' || !c){
+		return a-b;
+	}
+}","template<class T, class U>
+T func(T a, T b, U c)
+{
+ 
+	if(c == '+' || c){
+		return a+b;
+	}
+	else if(c == '-' || !c){
+		return a-b;
+	}
+}",understanding,hard
+what is the syntax of class templates?,template <paramaters> class declaration, Template <paramaters> class declaration,temp <paramaters> class declaration,Temp <paramaters> class declaration,template <paramaters> class declaration,memory,easy
+2. What is the purpose of the explicit keyword in C++?,It is used to convert one type to another implicitly.,It is used to indicate that a function is a constructor.,It is used to prevent automatic type conversions.,It is used to define a pure virtual function.,It is used to prevent automatic type conversions.,memory,medium
+ Which of the following is the correct syntax of including a user defined header files in C++?,#include [userdefined],#include “userdefined”,#include <userdefined.h>,#include <userdefined>,#include “userdefined”,understanding,medium
+3. Which of the following statements about function templates in C++ is true?,Function templates can only be defined in the global scope.,Function templates cannot have default arguments., Function templates cannot be overloaded.,Function templates can be specialized for specific types.,Function templates can be specialized for specific types.,understanding,easy
+6. What is the purpose of the typeid operator in C++?, It returns the type of a variable.,It checks if a type is polymorphic.,It returns the size of a type in bytes.,It converts a type to another type., It returns the type of a variable.,memory,hard
+24. What is the purpose of the std::unique_ptr class in C++?,It provides a smart pointer that automatically deletes objects., It allows multiple pointers to refer to the same object.,It manages memory allocation for dynamic arrays.,It provides reference counting for shared ownership.,It provides a smart pointer that automatically deletes objects.,memory,hard
+29. Which of the following is true regarding the const member functions in C++?,They can modify the object’s state.,They cannot modify the object’s state.,They can only be called on const objects.,They cannot be called on const objects.,They cannot modify the object’s state.,understanding,easy
+33. Which of the following is true regarding the mutable specifier in C++?,It allows a variable to be modified inside a const member function.,It makes a member function const., It prevents a member function from modifying the object’s state.,It allows a variable to be shared among multiple objects,It allows a variable to be modified inside a const member function.,memory,hard
+35. Which of the following is true regarding the std::vector class in C++?,It is a fixed-size container.,It provides constant-time random access to elements.,It does not allow for the insertion or removal of elements.,It provides constant-time random access to elements.,It provides constant-time random access to elements.,memory,medium
+"In general, is it possible to completely hide the source code of a library written using templates?","Yes,but not using export feature","No,pretty much never","Yes,all the time",None of the above,"No,pretty much never",understanding,medium
+Which of the following describes a potentially surprising result of using templates?,Slower programs,Poor varialble naming in debugger ,Increased executable size in comparision to code base ,None of the above,Increased executable size in comparision to code base ,memory,easy
+What problems can a templated member function cause ? ,They're just not legal,they're hard to use ,They allow violations of encapsulation ,None of the above,They allow violations of encapsulation ,understanding,hard
+Are templates conceptually related to polymorphism ?,Only when the template types are objects,"Yes,but compile time polymorphism",None,All of the above,"Yes,but compile time polymorphism",understanding,easy
+When are templates usually reinstated?,At runtime,At compile time,Both,None,At compile time,memory,medium
+Is there any semantic difference between class and typename in a type-parameter key?,Yes,No,Maybe,I don't know,No,memory,hard
+Which of the following is an invalid template declaration?,template<int x>int func(){return x;,template <double x>double func() {return x;},Both of these ,None of the above,template <double x>double func() {return x;},memory,hard
+What is the validity of template parameters?,Inside that block only ,Inside the class,Whole program,Inside the main class ,Inside that block only ,understanding,easy
+Can I separate the definition of my template class from its declaration and put it inside a .cpp file?,Yes,No,Maybe,I don't know,Yes,understanding,hard
+When must template functions have explicit template parameters ?,Always,"Never,the template types can always be inferred ",When the template types cannot be inferred ,None of these ,When the template types cannot be inferred ,understanding,medium
+What is an exception in C++ program?,A problem that arises during the execution of a program,A problem that arises during compilation,Also known as the syntax error,Also known as semantic error,A problem that arises during the execution of a program,memory,easy
+"By default, what a program does when it detects an exception?",Continue running,Results in the termination of the program,Calls other functions of the program,Removes the exception and tells the programmer about an exception,Results in the termination of the program,understanding,easy
+ Why do we need to handle exceptions?,To avoid unexpected behaviour of a program during run-time,To let compiler remove all exceptions by itself,To successfully compile the program,To get correct output,To avoid unexpected behaviour of a program during run-time,memory,easy
+How Exception handling is implemented in the C++ program?, Using Exception keyword, Using try-catch block,Using Exception block,Using Error handling schedules, Using try-catch block,memory,easy
+What is the correct syntax of the try-catch block?,"try
+{
+	// programable codes.....
+}
+catch(Exceptions)
+{
+	// Code for handling exceptions....
+}","b)
+
+try()
+{
+	// programable codes.....
+}
+catch(Exceptions)
+{
+	// Code for handling exceptions....
+}","try
+{
+	// programable codes.....
+}
+catch
+{
+	// Code for handling exceptions....
+}","d)
+
+try()
+{
+	// programable codes.....
+}
+catch
+{
+	// Code for handling exceptions....
+}","try
+{
+	// programable codes.....
+}
+catch(Exceptions)
+{
+	// Code for handling exceptions....
+}",understanding,hard
+Which part of the try-catch block is always fully executed?,try part,catch part,finally part,throw part,finally part,memory,medium
+Which of the following is an exception in C++?,Divide by zero,Semicolon not written, Variable not declared,An expression is wrongly written,Divide by zero,understanding,hard
+What is an error in C++?,Violation of syntactic and semantic rules of a languages,Missing of Semicolon,Missing of double quotes, Violation of program interface,Violation of syntactic and semantic rules of a languages,memory,easy
+What is the difference between error and exception?, Both are the same,Errors can be handled at the run-time but the exceptions cannot, Exceptions can be handled at the run-time but the errors cannot, Both can be handled during run-time, Exceptions can be handled at the run-time but the errors cannot,understanding,medium
+How many different types of exceptions are present?,1,2,3,4,2,memory,easy
+Which keyword is used to throw an exception?,try,throws,throw,except,throw,memory,easy
+Which keyword is used to define the macros in c++?, #macro, #define,macro,define, #define,un,hard
+"What will be the output of the following C++ code?
+
+#include <iostream>
+#include <string>
+#include <cstdlib>
+using namespace std;
+ 
+void func(int a, int b)
+{
+ 
+	if(b == 0){
+		throw ""This value of b will make the product zero. "" 
+                      ""So please provide positive values.\n"";
+	}
+	else{
+		cout<<""Product of ""<<a<<"" and  ""<<b<<"" is: ""<<a*b<<endl;
+	}
+}
+ 
+int main()
+{
+	try{
+		func(5,0);
+	}
+	catch(const char* e){
+		cout<<e;
+	}
+}",0,5,This value of b will make the product zero. So please provide positive values.,Product of 5 and 0 is: 0,This value of b will make the product zero. So please provide positive values.,example,medium
+" What will be the output of the following C++ code?
+
+#include <iostream>
+#include <string>
+#include <cstdlib>
+using namespace std;
+void func(int a, int b)
+{
+	if(b == 0){
+		throw ""This value of b will make the product zero. "" 
+                       ""So please provide positive values.\n"";
+	}
+	else{
+		cout<<""Product of ""<<a<<"" and  ""<<b<<"" is: ""<<a*b<<endl;
+	}
+}
+ 
+int main()
+{
+	try{
+		func(5,0);
+	}
+	catch(char* e){
+		cout<<e;
+	}
+}",0,Aborted (core dumped),This value of b will make the product zero. So please provide positive values.,Product of 5 and 0 is: 0,Aborted (core dumped),example,hard
+What is Re-throwing an exception means in C++?,An exception that is thrown again as it is not handled by that catching block,An exception that is caught twice,An exception that is not handled in one caught hence thrown again,All of the mentioned,All of the mentioned,understanding,medium
+"What will be the output of the following C++ code?
+
+#include <iostream>
+#include <string>
+#include <cstdlib>
+using namespace std;
+void func(int a, int b)
+{
+	if(b < 1){
+		throw b;
+	}
+	else{
+		cout<<""Product of ""<<a<<"" and  ""<<b<<"" is: ""<<a*b<<endl;
+	}
+}
+ 
+int main()
+{
+	try
+        {
+		try
+                {			
+		    func(5,-1);
+		}
+		catch(int b)
+                {
+			if(b==0)
+				throw ""value of b is zero\n"";
+			else
+				throw ""value of b is less than zero\n"";
+		}
+	}
+	catch(const char* e)
+        {
+		cout<<e;
+	}
+ 
+}",value of b is zero, value of b is less than zero,Product of 5 and -1 is: -5,Aborted(core dumped), value of b is less than zero,example,easy
+ Where should we place catch block of the derived class in a try-catch block?,Before the catch block of Base class,After the catch block of Base class,Anywhere in the sequence of catch blocks,After all the catch blocks,Before the catch block of Base class,memory,easy
+"What happens when this C++ program is compiled?
+
+#include <iostream>
+#include <string>
+#include <cstdlib>
+using namespace std;
+class A
+{
+	int a;
+    public:
+	A(){}
+};
+ 
+class B: public A
+{
+	int b;
+    public:
+	B(){}
+};
+ 
+void func()
+{
+	B b;
+	throw b;
+}
+ 
+int main()
+{
+	try{
+		func();
+	}
+	catch(A a){
+		cout<<""Caught A Class\n"";
+	}
+	catch(B b){
+		cout<<""Caught B Class\n"";
+	}
+}",The program compiles successfully without any errors or warnings,Compile-time error occurs,The program compiles successfully with warnings,The program gives both errors and warnings,The program compiles successfully with warnings,example,hard
+What is the syntax for catching any type of exceptions?,catch(Exception e),catch(…), catch(Exception ALL),catch(ALL),catch(…),memory,easy
+" What will be the output of the following C++ code?
+
+#include <iostream>
+#include <string>
+#include <cstdlib>
+using namespace std;
+class A
+{
+	int a;
+    public:
+	A(){}
+};
+ 
+class B: public A
+{
+	int b;
+    public:
+	B(){}
+};
+ 
+void func1()
+{
+	B b;
+	throw b;
+}
+ 
+void func2()
+{
+	A a;
+	throw a;
+}
+ 
+int main()
+{
+	try{
+		func1();
+	}
+	catch(...){
+		cout<<""Caught All types of exceptions\n"";
+	}
+	try{
+		func2();
+	}
+	catch(B b){
+		cout<<""Caught All types of exceptions\n"";
+	}
+}", Caught All types of exceptions,"Caught All types of exceptions
+Aborted (core dumped)",Error,"Caught All types of exceptions
+Caught All types of exceptions","Caught All types of exceptions
+Aborted (core dumped)",example,hard
+Uncaught exception leads to ______________,termination of program,successful execution of programs,no effect on the program,execution of other functions of the program starts,termination of program,fill ups,easy
+ An uncaught handler returns to _______________,main function, its caller,its callee, none of the mentioned, none of the mentioned,fill ups,medium
+Header file used for exception handling in C++?, <cstdlib>,<string>,<handler>,<exception>,<exception>,memory,hard
+What is the size of wchar_t in C++?,Based on the number of bits in the system,2 or 4,4,2,Based on the number of bits in the system,fill ups,hard
+ The C++ code which causes abnormal termination/behaviour of a program should be written under _________ block.,try,catch,finally ,throw,try,fill ups,easy
+Exception handlers are declared with ____________ keyword.,try,catch,finally,throw,catch,fill ups,easy
+"Which of the following statements are correct about Catch handler?
+
+i. It must be placed immediately after the try block 
+ii. It can have more than one parameters
+iii. There must be one and only one catch handler for every try block
+iv. There can be multiple catch handler for a try block 
+v. General catch handler can be kept anywhere after try block."," i, iv, v"," i, ii, iii"," i, iv","i, ii"," i, iv",understanding,medium
+"In nested try-catch block, if the inner catch block gets executed, then______________",Program stops immediately,Outer catch block also executes,Compiler jumps to the outer catch block and executes remaining statements of the main() function,Compiler executes remaining statements of outer try-catch block and then the main() function,Compiler executes remaining statements of outer try-catch block and then the main() function,fill ups,hard
+If inner catch block is unable to handle the exception thrown then__________,The compiler looks for the outer try-catch block,Program stops abnormally,The compiler will check for appropriate catch handler of the outer try block,The compiler will not check for appropriate catch handler of the outer try block,The compiler will check for appropriate catch handler of the outer try block,fill ups,medium
+" In nested try catch blocks, if both inner and outer catch blocks are unable to handle the exception thrown, then",Compiler executes only main(),Compiler throws compile time errors about it, Program will run without any interrupt, Program will be termianted abnormally, Program will be termianted abnormally,understanding,easy
+Which function is invoked when an unhandled exception is thrown?,stop(),aborted(),terminate(),abandon(),terminate(),memory,easy
+ How one can restrict a function to throw particular exceptions only?,By defining multiple try-catch blocks inside a function,By defining a generic function within a try-catch block,By defining a function with throw clauses,Not allowed in C++,By defining a function with throw clauses,understanding,medium
+Which function is invoked when we try to throw an exception that is not supported by a function?, indeterminate(), unutilized(),unexpected(),unpredicted(),unexpected(),memory,medium
+Return type of uncaught_exception() is, int, bool,char *,double, bool,memory,hard
+"What will be the output of the following C++ code?
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int var = -12;
+   try {
+      cout<<""Inside try\n"";
+      if (var < 0)
+      {
+        throw var;
+        cout<<""After throw\n"";
+      }
+   }
+   catch (int var ) {
+      cout<<""Exception Caught\n"";
+   }
+ 
+   cout<<""After catch\n"";
+   return 0;
+}","Inside try
+Exception Caught
+After catch","Inside try
+After throw
+After catch","Inside try
+Exception Caught
+After throw","Inside try
+Exception Caught
+After throw 
+After catch","Inside try
+Exception Caught
+After catch",example,medium
+"Which of the following is true about exception handling in C++?
+
+i) There is a standard exception class in C++ similar to Exception class in Java. 
+ii) All exceptions are unchecked in C++, i.e., the compiler does not checks if the exceptions are caught or not. 
+iii) In C++, a function can specify the list of exceptions that it can throw using comma separated list like following.
+void fun(int a, char b) throw (Exception1, Exception2, ..)"," i, iii"," i, ii, iii"," i, ii","ii, iii"," i, ii, iii",understanding,hard
+The C++ code which causes abnormal termination/behaviour of a program should be written under _________ block.,catch,throw,try,finally,try,memory,easy
+Which of the following symbol is used to declare the preprocessor directives in C++?,$, ^, #,*, #,memory,hard
+Pick the incorrect statement about inline functions in C++?,Saves overhead of a return call from a function,They are generally very large and complicated function,These functions are inserted/substituted at the point of call,They reduce function call overheads,They are generally very large and complicated function,understanding,medium
+What is the benefit of c++ input and output over c input and output?,Both Type safety & Exception,Sequence container,Exception,Type safety,Type safety,memory,medium
+To where does the program control transfers when an exception has arisen?,catch,handlers, throw,try,handlers,memory,easy
+Which keyword is used to check exception in the block of code?,catch ,throw,try,handlers,try,memory,easy
+What will happen when the exception is not caught in the program?,error,program will execute,block of that code will not execute,program will execute & displays wrong output,error,understanding,medium
+What will happen when the handler is not found for an exception?,calls the standard library function terminate(),raise an error,executes the remaining block, raise an error and executes the remaining block,calls the standard library function terminate(),understanding,easy
+"What is the advantage of exception handling ?
+Remove error-handling code from the software\'s main line of code.
+A method writer can choose to handle certain exceptions and delegate others to the caller.
+An exception that occurs in a function can be handled anywhere in the function call stack.",Only 1,"1, 2 and 3",1 and 3,1 and 2,"1, 2 and 3",memory,hard
+"What should be put in a try block?
+
+1. Statements that might cause exceptions
+2. Statements that should be skipped in case of an exception ",Only 1,Only 2,Both 1 and 2,None of the above,Both 1 and 2,memory,medium
+"#include <iostream>
+using namespace std;
+
+class Test {
+  static int count;
+  int id;
+public:
+  Test() {
+    count++;
+    id = count;
+    cout << \""Constructing object number \"" << id << endl;
+    if(id == 4)
+       throw 4;
+  }
+  ~Test() { cout << \""Destructing object number \"" << id << endl; }
+};
+
+int Test::count = 0;
+
+int main() {
+  try {
+    Test array[5];
+  } catch(int i) {
+    cout << \""Caught \"" << i << endl;
+  }
+} Give output:","Constructing object number 1
+Constructing object number 2
+Constructing object number 3
+Constructing object number 4
+Destructing object number 1
+Destructing object number 2
+Destructing object number 3
+Destructing object number 4
+Caught 4","Constructing object number 1
+Constructing object number 2
+Constructing object number 3
+Constructing object number 4
+Destructing object number 3
+Destructing object number 2
+Destructing object number 1
+Caught 4","Constructing object number 1
+Constructing object number 2
+Constructing object number 3
+Constructing object number 4
+Destructing object number 4
+Destructing object number 3
+Destructing object number 2
+Destructing object number 1
+Caught 4","Constructing object number 1
+Constructing object number 2
+Constructing object number 3
+Constructing object number 4
+Destructing object number 1
+Destructing object number 2
+Destructing object number 3
+Caught 4","Constructing object number 1
+Constructing object number 2
+Constructing object number 3
+Constructing object number 4
+Destructing object number 3
+Destructing object number 2
+Destructing object number 1
+Caught 4",understanding,hard
+"Which of the following is true about exception handling in C++? 1) There is a standard exception class like Exception class in Java. 2) All exceptions are unchecked in C++, i.e., compiler doesn\'t check if the exceptions are caught or not. 3) In C++, a function can specify the list of exceptions that it can throw using comma separated list like following.
+  void fun(int a, char b) throw (Exception1, Exception2, ..) 
+",1 and 3,"1, 2 and 3",1 and 2,2 and 3,"1, 2 and 3",memory,hard
+What is the purpose of the finally block in exception handling?,To define a block of code that will be executed if an exception occurs,To specify the code to be executed regardless of whether an exception occurs or not,To catch and handle specific exceptions,To raise a custom exception,To specify the code to be executed regardless of whether an exception occurs or not,understanding,easy
+Which keyword is used to signal the occurrence of an exception?,signal,raise,alert,throw,throw,memory,easy
+What is the purpose of try block?,To catch the exception,To throw the exception,To encapsulate potential exception-throwing code,None of the above,To encapsulate potential exception-throwing code,memory,easy
+Which of the following can be thrown as an exception in C++?,int,char,an object,All of the above,All of the above,memory,medium
+" If you have multiple catch blocks for a try block, how are they executed?",All catch blocks are executed sequentially, Only the first catch block is executed,Only the catch block matching the thrown exception type is executed,Last catch block is executed,Only the catch block matching the thrown exception type is executed,understanding,medium
+Which standard library class can be used for exception handling in C++?,exception,stdexcept,exceptions,error,exception,memory,easy
+What will happen if an exception is not caught?,The program continues normally, The program crashes,The exception is ignored,The exception is caught by the OS, The program crashes,understanding,easy
+Which keyword is used to specify a block of code that must be executed after the try-catch block?,finally,lastly,conclude,None of the above,None of the above,memory,easy
+What is the base class for all standard exception classes?,error,std::exception,std::base_exception,throw,std::exception,memory,medium
+Which of the following is not a standard exception derived from std::exception?,std::bad_alloc,std::out_of_range,std::throws,std::length_error,std::throws,memory,hard
+Which keyword is used to create an object of a class in C++?,new,this,class,object,new,memory,medium
+What is the main use of templates in C++?,To increase the runtime of a program,To add more variables to a program,To add flexibility to classes and functions,To make the program look better,To add flexibility to classes and functions,understanding,hard
+Which keyword is used for exception handling?,throw,throws,tackle,error,throw,memory,easy
+Which of the following is not a type of exception in C++?,runtime_error, logic_error,input_error,overflow_error,input_error,understanding,hard
+Which keyword is used to catch exceptions in C++?,capture,get,catch,trap,catch,memory,easy
+Which of the following keywords is used in C++ to allocate memory dynamically for a single value?,malloc(),alloc(), new,create, new,understanding,medium
+"To deallocate memory allocated using the new operator, which operator is used?",delete,free,dealloc,remove,delete,memory,easy
+Which of the following is a container in the Standard Template Library (STL)?,int,char,Vector,main,Vector,memory,hard
+What is the purpose of template specialization in C++?,To optimize code execution,To provide multiple definitions for a single function template,To handle specific cases differently in a template,To restrict the use of templates in certain contexts,To provide multiple definitions for a single function template,understanding,easy
+Which keyword is used to specify template parameters in C++?,parameter,type,template,typename,typename,memory,hard
+What can be a template parameter in C++?,Variables only,Data types only,Functions only,Both data types and functions,Data types only,understanding,medium
+Which of the following is a valid example of a template class?,template <int T> class MyClass;,template <typename T> class MyClass { ... };,class MyClass<T>;,template MyClass<T> { ... };,template <typename T> class MyClass { ... };,memory,hard
+What is the difference between template specialization and template friend functions?,"There's no difference, they achieve the same thing.","Specialization creates a custom version of a template for a specific type, while friend functions allow access to private members of the template class.","Specialization focuses on function templates, while friend functions are for class templates.","Specialization improves code efficiency, while friend functions enhance code readability.","Specialization creates a custom version of a template for a specific type, while friend functions allow access to private members of the template class.",understanding,hard
+When can a template function be explicitly instantiated?,It's always required.,"Never, instantiation happens automatically.",To improve performance for specific data types.,To prevent accidental instantiation with unintended types.,To improve performance for specific data types.,understanding,medium
+"Consider the following code snippet:
+
+C++
+template <typename T>
+void swap(T& a, T& b) {
+    T temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    int x = 5, y = 10;
+    swap(x, y);  // This is valid
+    swap(x, 3.14); // This will cause a compilation error
+}",The swap function cannot be used with constant values like 3.14.,Templates cannot be used with primitive data types like int.,Missing reference (&) for the second argument 3.14.,The swap function needs to be overloaded for different data types,The swap function needs to be overloaded for different data types,example,easy
+Which of the following statements is true about template argument deduction?,"It always succeeds, regardless of the function call.",It can fail if the compiler cannot determine the template argument type.,It only works with built-in data types.,It requires explicit type casting for the arguments.,It can fail if the compiler cannot determine the template argument type.,understanding,medium
+What is the advantage of using const with template parameters?,It allows modification of the template parameter within the function.,It ensures the parameter value remains constant throughout the template.,It ensures the parameter value remains constant throughout the template., It enables function overloading based on the parameter's const-ness.,It ensures the parameter value remains constant throughout the template.,memory,easy
+When might you consider using a template class instead of inheritance?,When you need to enforce a specific behavior for all derived classes.,When you need a generic data structure that can work with various data types.,When you want to achieve code reusability via polymorphism.,When you need to manage a hierarchy of related classes.,When you need a generic data structure that can work with various data types.,memory,medium
+What are some potential drawbacks of using templates in C++?, Increased compile times due to template instantiation.,Reduced code readability due to complex syntax., Difficulty in debugging template-based code.,All of the above.,All of the above.,understanding,easy
+How many catch blocks can follow a try block?,Only one , Exactly two ,Any number,None,Any number,understanding,medium
+What is the primary reason for using specific catch blocks (instead of a general catch (...) block)?,To simplify exception handling,To improve code readability ,To handle different exception types appropriately,To prevent the program from terminating ,To handle different exception types appropriately,memory,hard
+What best describes the behavior of C++ exceptions?,"Checked exceptions, requiring the compiler to verify they are handled.","Unchecked exceptions, not requiring explicit handling at compile time.",Exceptions can be thrown and caught across function calls. , All of the above, All of the above,understanding,easy
+What is a potential downside of relying heavily on exception handling?, Increased code complexity , Performance overhead,Difficulty in debugging issues that might be masked by exceptions ,All of the above,All of the above,memory,easy
+What is a good alternative to exception handling for certain error conditions?, Using error codes returned by functions, Relying on user input validation ,Implementing custom error messages ,Both a and b ,Both a and b ,memory,medium
+"When designing exception handling, it's generally recommended to:", Use a single catch (...) block for all exceptions,Catch specific exception types for targeted handling. ,"Throw exceptions for any unexpected behavior, even minor issues. ", Ignore exceptions entirely and rely on debugging tools.,Catch specific exception types for targeted handling. ,understanding,hard
+The noexcept specifier can be used with functions to indicate:, The function always throws an exception., The function may throw any type of exception.,The function will never throw an exception.,d) The function throws a specific exception type.,The function will never throw an exception.,memory,medium
+"Exception handling can be used for error recovery, but it's not a substitute for:", Input validation to prevent invalid data from reaching exception-prone code.,Robust code design that anticipates potential issues,Detailed logging for debugging purposes., All of the above., All of the above.,understanding,medium
+What is the primary advantage of using exception handling compared to traditional error codes?,Exceptions provide a cleaner syntax for error handling. ,Exceptions can automatically propagate errors up the call stack. ,Exceptions are always more efficient than error codes. ,Exceptions offer a more robust mechanism for handling unexpected errors.,Exceptions can automatically propagate errors up the call stack. ,understanding,hard
+In what scenario might you consider NOT using exception handling?,When dealing with performance-critical code where exceptions can introduce overhead.,For simple error conditions that can be easily handled with return codes.,When the error handling logic is complex and exception handling might make it more difficult to read.,All of the above. ,All of the above. ,memory,easy
+Which of the following statements is NOT true about exception specifications (using throw(...) or listing specific exception types)?,They can improve code readability by indicating potential exceptions thrown by a function.,They can be used to restrict the types of exceptions a function can throw.,he compiler can potentially generate warnings if a function throws an exception not listed in its specification. ,Exception specifications are mandatory for all functions in C++. ,Exception specifications are mandatory for all functions in C++. ,understanding,easy
+What is the primary purpose of the what() method in a custom exception class?,To provide a destructor for the exception object. , To retrieve the type of the exception object.,To return a human-readable description of the error condition. ,To re-throw the exception with additional context.,To return a human-readable description of the error condition. (,memory,hard
